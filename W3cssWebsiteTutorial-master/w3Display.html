@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Display</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="overview.html">W3.CSS Overview</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="containers.html">W3.CSS Containers</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="panel.html">W3.CSS Panels</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Images.html">W3.CSS Images</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Display.html">W3.CSS Display</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3layout.html">W3.CSS Layout</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3tables.html">W3.CSS Tables</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3list.html">W3.CSS Lists</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3button.html">W3.CSS Buttons</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3bars.html">W3.CSS Bars</a>
+ 
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class=" w3-container">
+      <h1 class="w3-text-teal">W3.CSS Display</h1>
+      
+<hr>
+
+<p>The display classes allow you to display HTML elements in specific positions inside other HTML elements:</p>
+<div class="w3-display-container w3-orange" style="height:250px;">
+  <div class="w3-display-topleft w3-padding">Top Left</div>
+  <div class="w3-display-topright w3-padding">Top Right</div>
+  <div class="w3-display-bottomleft w3-padding">Bottom Left</div>
+  <div class="w3-display-bottomright w3-padding">Bottom Right</div>
+  <div class="w3-display-left w3-padding">Left</div>
+  <div class="w3-display-right w3-padding">Right</div>
+  <div class="w3-display-middle w3-padding">Middle</div>
+  <div class="w3-display-topmiddle w3-hide-small w3-padding">Top Middle</div>
+  <div class="w3-display-bottommiddle w3-hide-small w3-padding">Bottom Middle</div>
+</div>
+
+<h2>W3.CSS Display Classes</h2>
+<p>W3.CSS provides the following display classes:&nbsp;</p>
+<table class="w3-table-all">
+ <tbody><tr>
+  <th>Class</th>
+  <th>Defines</th>
+ </tr>
+ <tr>
+  <td>w3-display-container</td>
+  <td>Container for w3-display-<em>classes</em></td>
+ </tr>
+ <tr>
+  <td>w3-display-topleft</td>
+  <td>Displays content at the top left corner of the w3-display-container</td>
+ </tr>
+ <tr>
+  <td>w3-display-topright</td>
+  <td>Displays content at the top right corner of the w3-display-container</td>
+ </tr>
+ <tr>
+  <td>w3-display-bottomleft</td>
+  <td>Displays content at the bottom left corner of the w3-display-container</td>
+ </tr>
+ <tr>
+  <td>w3-display-bottomright</td>
+  <td>Displays content at the bottom right corner of the w3-display-container</td>
+ </tr>
+ <tr>
+  <td>w3-display-left</td>
+  <td>Displays content to the left (middle left) of the w3-display-container</td>
+ </tr>
+ <tr>
+  <td>w3-display-right</td>
+  <td>Displays content to the right (middle right) of the w3-display-container</td>
+ </tr>
+ <tr>
+  <td>w3-display-middle</td>
+  <td>Displays content in the middle (center) of the w3-display-container</td>
+ </tr>
+ <tr>
+  <td>w3-display-topmiddle</td>
+  <td>Displays content at the top middle of the w3-display-container</td>
+ </tr>
+ <tr>
+  <td>w3-display-bottommiddle</td>
+  <td>Displays content at the bottom middle of the w3-display-container</td>
+ </tr>
+ <tr>
+  <td>w3-display-position</td>
+  <td>Displays content at a specified position in the w3-display-container</td>
+ </tr>
+ <tr>
+  <td>w3-display-hover</td>
+  <td>Displays content on hover inside the w3-display-container</td>
+ </tr>
+ <tr>
+  <td>w3-left</td>
+  <td>Floats an element to the left (float: left)</td>
+ </tr>
+ <tr>
+  <td>w3-right</td>
+  <td>Floats an element to the right (float: right)</td>
+ </tr>
+ <tr>
+  <td>w3-show</td>
+  <td>Shows an element (display: block)</td>
+ </tr>
+ <tr>
+  <td>w3-hide</td>
+  <td>Hides an element (display: none)</td>
+ </tr>
+ <tr>
+  <td>w3-mobile</td>
+  <td>Adds mobile-first responsiveness to any element.<br>Displays
+  elements as block elements on mobile devices</td>
+ </tr>
+</tbody></table>
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+<!-- MidContent -->
+
+  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
+  <div id="snhb-mid_content-0" data-google-query-id="CPW_9pzO_eMCFUSAcAodH5MMtA"><div id="google_ads_iframe_/22152718/sws-hb//w3schools.com//mid_content_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/22152718/sws-hb//w3schools.com//mid_content_0" title="3rd party ad content" name="google_ads_iframe_/22152718/sws-hb//w3schools.com//mid_content_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;" data-google-container-id="f" data-load-complete="true"></iframe></div></div>
+    
+</div>
+
+
+<hr>
+<h2>Examples</h2>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-container w3-green"</span> style<span class="attributevaluecolor" style="color:mediumblue">="height:300px;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-topleft"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Top Left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-topright"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Top Right<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-bottomleft"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bottom Left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-bottomright"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bottom Right<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-left"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-right"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Right<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-middle"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Middle<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-topmiddle"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Top Mid<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-bottommiddle"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bottom Mid<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+</div>
+
+
+<p>Same example as above with added padding:</p>
+<div class="w3-display-container w3-orange" style="height:250px;">
+  <div class="w3-padding w3-display-topleft">Top Left</div>
+  <div class="w3-padding w3-display-topright">Top Right</div>
+  <div class="w3-padding w3-display-bottomleft">Bottom Left</div>
+  <div class="w3-padding w3-display-bottomright">Bottom Right</div>
+  <div class="w3-padding w3-display-left">Left</div>
+  <div class="w3-padding w3-display-right">Right</div>
+  <div class="w3-padding w3-display-middle">Middle</div>
+  <div class="w3-padding w3-display-topmiddle w3-hide-small">Top Middle</div>
+  <div class="w3-padding w3-display-bottommiddle w3-hide-small">Bottom Middle</div>
+</div>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-container w3-green"</span> style<span class="attributevaluecolor" style="color:mediumblue">="height:300px;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-topleft"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Top Left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-topright"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Top Right<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-bottomleft"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bottom Left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-bottomright"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bottom Right<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-left"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-right"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Right<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-middle"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Middle<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-topmiddle"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Top Mid<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-bottommiddle"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bottom Mid<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+</div>
+
+
+
+<p>Displaying text inside an image:</p>
+<div class="w3-display-container w3-text-white">
+  <img src="c.jpg" alt="Lights" style="width:100%;max-height:400px">
+  <div class="w3-padding w3-display-topleft">Top Left</div>
+  <div class="w3-padding w3-display-topright">Top Right</div>
+  <div class="w3-padding w3-display-bottomleft">Bottom Left</div>
+  <div class="w3-padding w3-display-bottomright">Bottom Right</div>
+  <div class="w3-padding w3-display-topmiddle">Top Mid</div>
+  <div class="w3-padding w3-display-left">Left</div>
+  <div class="w3-padding w3-display-right">Right</div>
+  <div class="w3-padding w3-display-middle">Middle</div>
+  <div class="w3-padding w3-display-bottommiddle">Bottom Mid</div>
+</div>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-container"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="c.jpg"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Lights"</span> style<span class="attributevaluecolor" style="color:mediumblue">="width:100%"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-topleft"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Top Left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-topright"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Top Right<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-bottomleft"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bottom Left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-bottomright"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bottom Right<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-topmiddle"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Top Mid<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-left"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-right"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Right<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-middle"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Middle<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-padding w3-display-bottommiddle"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bottom Mid<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+</div>
+<hr>
+<h2>Display Hover</h2>
+<p>The <strong>w3-display-hover</strong> class displays content on hover inside a w3-display-container (goes from hidden to shown).</p>
+  
+<div class="w3-display-container w3-orange" style="height:250px;">
+  <div class="w3-display-topleft w3-display-hover">Top Left</div>
+  <div class="w3-display-topright w3-display-hover">Top Right</div>
+  <div class="w3-display-bottomleft w3-display-hover">Bottom Left</div>
+  <div class="w3-display-bottomright w3-display-hover">Bottom Right</div>
+  <div class="w3-display-left w3-display-hover">Left</div>
+  <div class="w3-display-right w3-display-hover">Right</div>
+  <div class="w3-display-middle">Mouse over this box!</div>
+  <div class="w3-display-topmiddle w3-display-hover">Top Mid</div>
+  <div class="w3-display-bottommiddle w3-display-hover">Bottom Mid</div>
+</div>
+
+<div class="w3-panel w3-card w3-orange">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-container w3-light-grey"</span> style<span class="attributevaluecolor" style="color:mediumblue">="height:300px;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-topleft w3-display-hover"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Top Left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> 
+  class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-topright w3-display-hover"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Top Right<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> 
+  class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-bottomleft w3-display-hover"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bottom Left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-bottomright w3-display-hover"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bottom Right<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-left w3-display-hover"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> 
+  class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-right w3-display-hover"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Right<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> 
+  class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-middle"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Mouse over this box!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> 
+  class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-topmiddle w3-display-hover"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Top Mid<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> 
+  class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-bottommiddle w3-display-hover"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bottom Mid<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<hr>
+
+<h2>Displaying A Flag</h2>
+<p>With a little bit of imagination, the w3-display-classes can be used to create a flag:</p>
+<div class="w3-display-container w3-card-4" style="height:200px;width:340px">
+  <div class="w3-red w3-display-topleft" style="width:25%;height:40%"></div>
+  <div class="w3-red w3-display-topright" style="width:60%;height:40%"></div>
+  <div class="w3-red w3-display-bottomleft" style="width:25%;height:40%"></div>
+  <div class="w3-red w3-display-bottomright" style="width:60%;height:40%"></div>
+</div>
+
+<div class="w3-panel w3-card w3-orange">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-display-container w3-card-4"</span> style<span class="attributevaluecolor" style="color:mediumblue">="height:200px;width:350px"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-red w3-display-topleft"</span> style<span class="attributevaluecolor" style="color:mediumblue">="width:25%;height:40%"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-red w3-display-topright"</span> style<span class="attributevaluecolor" style="color:mediumblue">="width:60%;height:40%"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-red w3-display-bottomleft"</span> style<span class="attributevaluecolor" style="color:mediumblue">="width:25%;height:40%"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-red w3-display-bottomright"</span> style<span class="attributevaluecolor" style="color:mediumblue">="width:60%;height:40%"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<hr>
+
+
+
+<h2>Floating Classes</h2>
+<p>The <strong>w3-left</strong> class floats an element to the left, the <strong>w3-right</strong> class 
+floats an element to the right:</p>
+<div class="w3-container w3-light-grey" style="padding:0">
+  <div class="w3-left w3-red w3-padding">w3-left</div>
+  <div class="w3-right w3-blue w3-padding">w3-right</div>
+</div>
+<div class="w3-clear"></div>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-bar w3-light-grey"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-left 
+w3-red"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>w3-left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-right w3-blue"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>w3-right<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> Clear floats with the <strong>w3-clear</strong> class or put them inside a <strong>w3-container</strong>, like in the example above (clears floats automatically).</p>
+</div>
+
+<hr>
+
+<h2>Hide and Show</h2>
+<p>Force an element to be shown or hidden with the <strong>w3-show</strong> or
+<strong>w3-hide</strong> class.</p>
+
+<div class="w3-panel w3-card w3-orange">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-show"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>I am shown (display: block).<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-hide"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>I am hidden (display: none).<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+
+
+<p>These classes are often used to toggle between hiding and showing elements:</p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("Demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+<div class="w3-panel w3-card w3-orange">
+<h3>Example</h3>
+<div class="w3-white w3-padding w3-padding-16">
+<button onclick="myFunction()" class="w3-btn w3-black" style="box-shadow: none;">Toggle hide and show</button>
+
+<p id="Demo" class="w3-hide w3-red w3-padding">Hello!</p>
+</div>
+
+</div>
+<hr>
+
+<h2>The w3-mobile Class</h2>
+<p>The <strong>w3-mobile</strong> class adds mobile-first responsiveness to any element.</p>
+<p>It adds display:block and width:100% to an element on screens that are less than 600px wide.</p>
+
+<div class="w3-panel w3-card w3-orange">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="w3-button w3-mobile"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Link<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="overview.html">W3.CSS Overview</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="containers.html">W3.CSS Containers</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="panel.html">W3.CSS Panels</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Images.html">W3.CSS Images</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Display.html">W3.CSS Display</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3layout.html">W3.CSS Layout</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3tables.html">W3.CSS Tables</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3list.html">W3.CSS Lists</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3button.html">W3.CSS Buttons</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3bars.html">W3.CSS Bars</a>>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class=" w3-container">
+      <h1 class="w3-text-teal">W3.CSS Buttons</h1>
+      
+<hr>
+<div class="w3-section">
+<button class="w3-btn w3-ripple w3-red">Button</button>
+<button class="w3-btn w3-ripple w3-blue">Button</button>
+<button class="w3-btn w3-ripple w3-green">Button</button>
+<button class="w3-btn w3-ripple w3-orange">Button</button>
+<button class="w3-btn w3-ripple w3-teal">Button</button>
+<button class="w3-btn w3-ripple w3-black">Button</button>
+<button class="w3-btn w3-black w3-disabled">Disabled</button>
+</div>
+<div class="w3-section">
+<button class="w3-button w3-red">Button</button>
+<button class="w3-button w3-blue">Button</button>
+<button class="w3-button w3-green">Button</button>
+<button class="w3-button w3-orange">Button</button>
+<button class="w3-button w3-teal">Button</button>
+<button class="w3-button w3-black">Button</button>
+<button class="w3-button w3-black w3-disabled">Disabled</button>
+</div>
+<div class="w3-section">
+<button class="w3-btn w3-white w3-border">Button</button>
+<button class="w3-btn w3-grey w3-round">Button</button>
+<button class="w3-btn w3-white w3-border w3-border-blue w3-round">Button</button>
+<button class="w3-btn w3-white w3-border w3-border-red w3-text-red w3-round-large">Button</button>
+<button class="w3-btn w3-white w3-border w3-border-green w3-round-xlarge">Button</button>
+<button class="w3-btn w3-red" style="text-shadow:1px 1px 0 #444"><b>Shadow</b></button>
+<button class="w3-btn w3-black w3-padding-large w3-hover-red">Button</button>
+</div>
+<div class="w3-section">
+<a class="w3-button w3-large w3-circle w3-xlarge w3-ripple w3-black" style="z-index:0">+</a>
+<a class="w3-button w3-large w3-circle w3-xlarge w3-ripple w3-teal" style="z-index:0">+</a>
+<a class="w3-button w3-large w3-circle w3-xlarge w3-ripple w3-grey" style="z-index:0">+</a>
+</div>
+<div class="w3-bar">
+  <button class="w3-bar-item w3-button w3-black">Button1</button>
+  <button class="w3-bar-item w3-button w3-teal">Button2</button>
+  <button class="w3-bar-item w3-button w3-dark-grey">Button3</button>
+</div>
+<div class="w3-section">
+<button class="w3-button w3-block w3-black">Button</button>
+<button class="w3-button w3-block w3-teal">Button</button>
+</div>
+<hr>
+
+
+<h2 class="w3-text">W3.CSS Button Classes</h2>
+
+<p>W3.CSS provides the following classes for buttons:</p>
+<table class="w3-table w3-striped w3-border">
+ <tr>
+  <th >Class</th>
+  <th>Defines</th>
+ </tr>
+ <tr>
+  <td>w3-btn</td>
+  <td>A rectangular button with a shadow hover effect.<br>
+  Default color is black.</td>
+ </tr>
+ <tr>
+  <td>w3-button</td>
+  <td>
+  A rectangular button with a gray hover effect.<br>
+  Default color is light-gray 
+  in W3.CSS version 3.<br>Default color is inherited from parent element in version 4.</td>
+ </tr>
+ <tr>
+  <td>w3-bar</td>
+  <td>
+  A horizontal bar that can be used to group buttons together.<br>
+  (Perfect for horizontal navigation menus)</td>
+ </tr>
+ <tr>
+  <td>w3-block</td>
+  <td>
+  Class that can be used to define a full width (100%) button.</td>
+ </tr>
+ <tr>
+  <td>w3-circle</td>
+  <td>Can be used to define a circular button.</td>
+ </tr>
+ <tr>
+  <td>w3-ripple</td>
+  <td>Can be used to create a ripple effect.</td>
+ </tr>
+ </table>
+<hr>
+
+<h2>Buttons</h2>
+<p>Both the <strong>w3-button</strong> class and the <strong>w3-btn</strong>
+class add button-behavior to any HTML elements.</p>
+<p>The most common elements to use are 
+&lt;input type=&quot;button&quot;&gt;, &lt;button&gt;, and &lt;a&gt;:</p>
+
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;input class=&quot;w3-button w3-black&quot; type=&quot;button&quot; value=&quot;Input Button&quot;&gt;<br>
+&lt;button class=&quot;w3-button w3-black&quot;&gt;Button Button&lt;/button&gt;<br>
+&lt;a href=&quot;https://www.w3schools.com&quot; class="w3-button w3-black"&gt;Link Button&lt;/a&gt;<br><br>
+&lt;input class=&quot;w3-btn w3-black&quot; type=&quot;button&quot; value=&quot;Input Button&quot;&gt;<br>
+&lt;button class=&quot;w3-btn w3-black&quot;&gt;Button Button&lt;/button&gt;<br>
+&lt;a href=&quot;https://www.w3schools.com&quot; class="w3-btn w3-black"&gt;Link Button&lt;/a&gt;
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white">
+  <h4>Buttons (w3-button)</h4>
+  <input type="button" class="w3-button w3-black" value="Input Button">
+  <button class="w3-button w3-black">Button Button</button>
+  <a href="#" class="w3-button w3-black">Link Button</a>
+
+  <h4>Buttons (w3-btn)</h4>
+  <input type="button" class="w3-btn w3-black" value="Input Button">
+  <button class="w3-btn w3-black">Button Button</button>
+  <a href="#" class="w3-btn w3-black">Link Button</a>
+
+</div>
+<br>
+</div>
+
+<hr>
+
+<h2>Button Colors</h2>
+<p><b>W3.CSS</b> offers a large number of colors.<br>Here is an example of some colors...</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;button class=&quot;w3-button w3-black&quot;&gt;Black&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-khaki&quot;&gt;Khaki&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-yellow&quot;&gt;Yellow&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-red&quot;&gt;Red&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-purple&quot;&gt;Purple&lt;/button&gt;
+</div>
+<h3>Output :</h3>
+<div>
+ <p>
+<button class="w3-button w3-black">Black</button>
+<button class="w3-button w3-khaki">Khaki</button>
+<button class="w3-button w3-yellow">Yellow</button>
+<button class="w3-button w3-red">Red</button>
+<button class="w3-button w3-purple">Purple</button>
+</p></div>
+</div>
+
+<hr>
+
+<h2>Hover Colors</h2>
+<p>The <b>w3-hover-color</b> classes is used to add hover color to buttons.
+<br>
+Hover effects also come in all colors. 
+<br>
+Here are some:</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;button class=&quot;w3-button w3-hover-black&quot;&gt;Black&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-hover-red&quot;&gt;Red&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-hover-purple&quot;&gt;Purple&lt;/button&gt;
+</div>
+<h3>Output :</h3>
+<div>
+ <p>
+<button class="w3-button w3-black w3-hover-black">White</button>
+<button class="w3-button w3-black w3-hover-red">Red</button>
+<button class="w3-button w3-black w3-hover-purple">Purple</button></p></div>
+</div>
+
+<hr>
+
+<h2>Button Shapes</h2>
+<p>The w3-round-size classes are used to add rounded borders to buttons.>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;button class=&quot;w3-button w3-black w3-round-small&quot;&gt;Round Small&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-black w3-round&quot;&gt;Round Normal&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-black w3-round-large&quot;&gt;Round Large&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-black w3-round-xlarge&quot;&gt;Round XLarge&lt;/button&gt;<br>
+</div>
+<h3>Output :</h3>
+<div>
+ <p>
+<button class="w3-button w3-black w3-round-small">Round Small</button><br><br>
+<button class="w3-button w3-black w3-round">Round Normal</button><br><br>
+<button class="w3-button w3-black w3-round-large">Round Large</button><br><br>
+<button class="w3-button w3-black w3-round-xlarge">Round XLarge</button><br>
+</p></div>
+</div>
+<hr>
+
+<h2>Button Borders</h2>
+<p>The w3-border class can be used to add borders to buttons.<br>
+The w3-border-color classes are used to define the color of the border.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;button class=&quot;w3-button w3-white w3-border&quot;&gt;Button&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-yellow w3-border&quot;&gt;Button&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-white w3-border w3-round-large&quot;&gt;Button&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-white w3-border w3-border-red w3-round-large&quot;&gt;Button&lt;/button&gt;<br><br>
+&lt;button class=&quot;w3-btn w3-white w3-border&quot;&gt;Button&lt;/button&gt;<br>
+&lt;button class=&quot;w3-btn w3-yellow w3-border&quot;&gt;Button&lt;/button&gt;<br>
+&lt;button class=&quot;w3-btn w3-white w3-border w3-round-large&quot;&gt;Button&lt;/button&gt;<br>
+&lt;button class=&quot;w3-btn w3-white w3-border w3-border-red w3-round-large&quot;&gt;Button&lt;/button&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white">
+ <p>
+<p>
+<br>
+  <button class="w3-button w3-white w3-border">Button</button>
+  <button class="w3-button w3-yellow w3-border">Button</button>
+  <button class="w3-button w3-white w3-border w3-round-large">Button</button>
+  <button class="w3-button w3-white w3-border w3-border-red w3-round-large">Button</button>
+
+</p>
+<p>
+  <button class="w3-btn w3-white w3-border">Button</button>
+  <button class="w3-btn w3-yellow w3-border">Button</button>
+  <button class="w3-btn w3-white w3-border w3-round-large">Button</button>
+  <button class="w3-btn w3-white w3-border w3-border-red w3-round-large">Button</button>
+
+</p>
+<hr>
+</p></div>
+</div>
+<hr>
+
+<h2>Circular Buttons</h2>
+<p>The w3-circle class can be used to create circular buttons:</p><div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;button class=&quot;w3-button w3-circle w3-black&quot;&gt;+&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-circle w3-teal&quot;&gt;+&lt;/button&gt;<br>
+</div>
+<h3>Output :</h3>
+<div>
+ <p>
+<a class="w3-button w3-xlarge w3-circle w3-black">+</a>
+<a class="w3-button w3-xlarge w3-circle w3-teal">+</a></p>
+</div>
+</div>
+<hr>
+
+<h2>Square Buttons</h2>
+<p>The w3-circle class can be used to create circular buttons:</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;button class=&quot;w3-button w3-black&quot;&gt;+&lt;/button&gt;<br>
+&lt;button class=&quot;w3-button w3-teal&quot;&gt;+&lt;/button&gt;<br>
+</div>
+<h3>Output :</h3>
+<div>
+ <p>
+<a class="w3-button w3-xlarge w3-black">+</a>
+<a class="w3-button w3-xlarge w3-teal">+</a></p>
+</div>
+</div>
+
+<hr>
+
+<h2>Disabled Buttons</h2>
+<p>Buttons stand out with a shadow effect and the cursor turns into a hand when mousing over them.</p>
+<p>Disabled buttons are opaque (semi-transparent) and display a "no parking sign":</p>
+<p>The <strong>w3-disabled</strong> class is used to create a disabled button 
+(if the element support the standard HTML disabled attribute, you can use the 
+disabled attribute instead):</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;button class=&quot;w3-button w3-teal w3-disabled&quot;&gt;Disabled&lt;/button&gt;<br>
+&lt;input type=&quot;button&quot; class=&quot;w3-button w3-black&quot; value=&quot;Disabled&quot; disabled&gt;<br><br>
+&lt;button class=&quot;w3-btn w3-teal w3-disabled&quot;&gt;Disabled&lt;/button&gt;<br>
+&lt;input type=&quot;button&quot; class=&quot;w3-btn w3-black&quot; value=&quot;Disabled&quot; disabled&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white">
+ <p>
+<br>
+<button class="w3-button w3-teal w3-disabled">Disabled</button>
+<input type="button" class="w3-button w3-black" value="Disabled" disabled>
+
+</p>
+<p>
+<button class="w3-btn w3-teal w3-disabled">Disabled</button>
+<input type="button" class="w3-btn w3-black" value="Disabled" disabled>
+<hr>
+</p>
+</div>
+</div>
+<hr>
+
+  <!-- Pagination -->
+  <div class="w3-center">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+w3CodeColor();
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

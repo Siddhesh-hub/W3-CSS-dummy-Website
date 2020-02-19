@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Panels</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+ <a class="w3-bar-item w3-button w3-hover-black" href="overview.html">W3.CSS Overview</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="containers.html">W3.CSS Containers</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="panel.html">W3.CSS Panels</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Images.html">W3.CSS Images</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Display.html">W3.CSS Display</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3layout.html">W3.CSS Layout</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3tables.html">W3.CSS Tables</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3list.html">W3.CSS Lists</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3button.html">W3.CSS Buttons</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3bars.html">W3.CSS Bars</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+<!-- Heading Content-->
+  <div class="w3-row w3-padding-64">
+	<h1 class="w3-text-teal">W3.CSS Panels</h1>
+	<div class="w3-panel w3-red">
+		<p>I am a panel.</p>
+	</div>
+	<div class="w3-panel w3-green">
+		<p>I am a panel.</p>
+	</div>
+
+	<div class="w3-container w3-red">
+		<p>I am a container.</p>
+	</div>
+	<div class="w3-container w3-green">
+		<p>I am a container.</p>
+	</div>
+  </div>
+<hr>
+
+
+<!--Content 2-->
+  <hr>
+	<div class="w3-row">
+	<div class=" w3-panel">
+	<h2 class="w3-text">The Panel Class</h2>
+	<p>The <b>w3-panel</b> class adds a 16px top and bottom margin and a 16px left and right padding  
+	to any HTML element.</p>
+	</div>
+	</div>
+	
+	
+	
+<!--Example 1-->
+<div class="w3-panel w3-card w3-orange">
+	<h3>Example :</h3>
+	<div class="w3-code notranslate htmlHigh">
+		&lt; &quot; &gt;
+		<p>&lt;div class=&quot;w3-panel w3-red&quot;&gt;</p>
+		<p>&lt;p&gt; This will create panel with red color. &lt;/p&gt;</p>
+		<p>&lt;/div&gt;</p>
+	</div>
+	<h3>Output :</h3>
+		<div class="w3-code notranslate htmlHigh">
+			<div class="w3-panel w3-red">
+			<p> This will create panel with red color. </p>
+			</div>
+		</div>
+</div>
+<hr>
+<!-- Example 2-->
+
+
+	<div class="w3-row">
+	<div class="w3-panel">
+	<h2 class="w3-text">Panels for Notes</h2>
+		<p>The <strong>w3-panel</strong> class is perfect for displaying notes.</p>
+		<p>Notes are often displayed with a pale color.</p>
+			<div class="w3-copanel w3-pale-green">
+				<p>London is most populous city in the United Kingdom,
+				with a metropolitian area of over 9 million inhabitants .</p>
+			</div>
+		<div class="w3-panel w3-card w3-orange">
+	<h3>Example :</h3>
+	<div class="w3-code notranslate htmlHigh">
+		
+		<p>&lt;div class=&quot;w3-panel w3-pale-green&quot;&gt;</p>
+		<p>&lt;p&gt;London is most populous city in the United Kingdom,
+		with a metropolitian area of over 9 million inhabitants .&lt;/p&gt;</p>
+		<p>&lt;/div&gt;</p>
+	</div>
+	<h3>Output :</h3>
+		<div class="w3-code notranslate htmlHigh">
+			<div class="w3-copanel w3-pale-green">
+				<p>London is most populous city in the United Kingdom,
+				with a metropolitian area of over 9 million inhabitants .</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+	
+	<div class="w3-row">
+	<div class="w3-panel">
+	<h2 class="w3-text">Panels for Quotes</h2>
+		<p>The <strong>w3-container </strong>class is perfect for displaying Quotes.</p>
+		<div class="w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif">
+		<p><i>"Slow but Steady wins the Race."</i></p>
+		</div>
+	<div class="w3-panel w3-card w3-orange">
+	<h3>Example :</h3>
+	<div class="w3-code notranslate htmlHigh">
+		<p>&lt;div class=&quot;w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif&quot;&gt;</p>
+		<p>&lt;p&gt;&lt;i&gt;"Slow but Steady wins the Race."&lt;/i&gt;&lt;/p&gt;</p>
+		<p>&lt;/div&gt;</P>
+	</div>
+	<h3>Output :</h3>
+		<div class="w3-code notranslate htmlHigh">
+			<div class="w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif">
+			<p><i>"Slow but Steady wins the Race."</i></p>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+<hr>
+<!--panels for alerts-->
+	<div class="w3-row">
+	<div class="w3-panel">
+	<h2 class="w3-text">Panels for Alerts</h2>
+		<p>The <strong>w3-panel </strong>class is perfect for displaying Alerts.</p>
+		<p>Alerts are often displayed with <strong>strong colors</strong>.</p>
+		<div class="w3-panel w3-red">
+		<h3>Danger</h3>
+		<p>Red often indicates a dangerous or negative situation.</p>
+		</div>
+	<div class="w3-panel w3-card w3-orange">
+	<h3>Example :</h3>
+	<div class="w3-code notranslate htmlHigh">
+		<p>&lt;div class=&quot;w3-panel w3-red&quot;&gt;</p>
+		<p>&lt;h3&gt;Danger&lt;/h3&gt;</p>
+		<p>&lt;p&gt;Red often indicates a dangerous or negative situation.&lt;/h3&gt;</p>
+		<p>&lt;/div&gt;</P>
+	</div>
+	<h3>Output :</h3>
+		<div class="w3-code notranslate htmlHigh">
+			<div class="w3-panel w3-red">
+			<h3>Danger</h3>
+			<p>Red often indicates a dangerous or negative situation</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+<hr>
+<!--panels as Cards-->
+	<div class="w3-row">
+	<div class="w3-panel">
+	<h2 class="w3-text">Panels as Cards</h2>
+		<div class="w3-panel w3-blue w3-card-4">
+		<h3>Danger</h3>
+		<p>Red often indicates a dangerous or negative situation.</p>
+		</div>
+	<div class="w3-panel w3-card w3-orange">
+	<h3>Example :</h3>
+	<div class="w3-code notranslate htmlHigh">
+		<p>&lt;div class=&quot;w3-panel w3-red&quot;&gt;</p>
+		<p>&lt;h3&gt;Danger&lt;/h3&gt;</p>
+		<p>&lt;p&gt;Red often indicates a dangerous or negative situation.&lt;/h3&gt;</p>
+		<p>&lt;/div&gt;</P>
+	</div>
+	<h3>Output :</h3>
+		<div class="w3-code notranslate htmlHigh">
+			<div class="w3-panel w3-red">
+			<h3>Danger</h3>
+			<p>Red often indicates a dangerous or negative situation</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+<hr>
+<!--Rounded panel-->
+	<div class="w3-row">
+	<div class="w3-panel">
+	<h2 class="w3-text">Rounded Panel</h2>
+		<div class="w3-panel w3-blue w3-round-xlarge">
+		<p>London is the most populous city in the United Kingdom,
+			with a metropolitian area of over 9 million inhabitants.</p>
+		</div>
+	<div class="w3-panel w3-card w3-orange">
+	<h3>Example :</h3>
+	<div class="w3-code notranslate htmlHigh">
+		<p>&lt;div class=&quot;w3-panel w3-blue w3-round-xlarge&quot;&gt;</p>
+		<p>&lt;p&gt;London is the most populous city in the United Kingdom,
+			with a metropolitian area of over 9 million inhabitants.&lt;/p&gt;</p>
+		<p>&lt;/div&gt;</P>
+	</div>
+	<h3>Output :</h3>
+		<div class="w3-code notranslate htmlHigh">
+			<div class="w3-panel w3-blue w3-round-xlarge">
+			<p>London is the most populous city in the United Kingdom,
+			with a metropolitian area of over 9 million inhabitants.</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+<hr>
+<!--Hide panel-->
+	<div class="w3-row">
+	<div class="w3-panel">
+	<h2 class="w3-text">Hide (close) Panel</h2>
+		<div class="w3-panel w3-display-container w3-red">
+		  <span onclick="this.parentElement.style.display='none'"
+		  class="w3-button w3-display-topright">X</span>
+		  <p>Click on the X to close this panel.</p>
+		  <p>Click on the X to close this panel.</p>
+		</div>
+	<div class="w3-panel w3-card w3-orange">
+	<h3>Example :</h3>
+	<div class="w3-code notranslate htmlHigh">
+		<p>&lt;div class=&quot;w3-panel w3-display-container&quot;&gt;</p>
+		<p>&lt;span onclick="this.parentElement.style.display='none'"
+			class=&quot;w3-button w3-display-topright&quot&gt;X&lt;/span&gt;</p>
+		<p>Click on the X to close this panel.</p>
+		<p>Click on the X to close this panel.</p>
+		<p>&lt;/div&gt;</P>
+	</div>
+	<h3>Output :</h3>
+		<div class="w3-code notranslate htmlHigh">
+			<div class="w3-panel w3-display-container w3-red">
+			  <span onclick="this.parentElement.style.display='none'"
+			  class="w3-button w3-display-topright">X</span>
+			  <p>Click on the X to close this panel.</p>
+			  <p>Click on the X to close this panel.</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+<hr>
+<!--Open panel-->
+	<div class="w3-row">
+	<div class="w3-panel">
+	<h2 class="w3-text">Show (open) a panel. </h2>
+		<button class="w3-btn w3-yellow" onclick="document.getElementById('id01').style.display='block'">Show panel</button>
+
+		<div id="id01" class="w3-panel w3-green w3-display-container" style="display:none">
+		  <span onclick="this.parentElement.style.display='none'"
+		  class="w3-button w3-display-topright">X</span>
+		  <p>Click on the X to close this panel.</p>
+		  <p>Click on the X to close this panel.</p>
+		</div>
+	<div class="w3-panel w3-card w3-orange">
+	<h3>Example :</h3>
+	<div class="w3-code notranslate htmlHigh">
+		<p>&lt;button class=&quot;w3-btn&quot; onclick=&quot;document.getElementById('id01').style.display='block'&quot;&gt;Show panel&lt;/button&gt;</p>
+		<p>&lt;div id=&quot;id01&quot; class=&quot;w3-panel w3-green w3-display-container&quot; style=&quot;display:none&quot;&gt;</p>
+		<p>&lt;span onclick="this.parentElement.style.display='none'"
+			class=&quot;w3-button w3-display-topright&quot&gt;X&lt;/span&gt;</p>
+		<p>Click on the X to close this panel.</p>
+		<p>Click on the X to close this panel.</p>
+		<p>&lt;/div&gt;</P>
+	</div>
+	<h3>Output :</h3>
+		<div class="w3-code notranslate htmlHigh">
+			<button class="w3-btn w3-yellow" onclick="document.getElementById('id01').style.display='block'">Show panel</button>
+
+			<div id="id01" class="w3-panel w3-green w3-display-container" style="display:none">
+			  <span onclick="this.parentElement.style.display='none'"
+			  class="w3-button w3-display-topright">X</span>
+			  <p>Click on the X to close this panel.</p>
+			  <p>Click on the X to close this panel.</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+<hr>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">&raquo;</a>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

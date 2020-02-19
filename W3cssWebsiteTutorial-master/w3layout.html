@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Layout</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="overview.html">W3.CSS Overview</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="containers.html">W3.CSS Containers</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="panel.html">W3.CSS Panels</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Images.html">W3.CSS Images</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Display.html">W3.CSS Display</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3layout.html">W3.CSS Layout</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3tables.html">W3.CSS Tables</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3list.html">W3.CSS Lists</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3button.html">W3.CSS Buttons</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3bars.html">W3.CSS Bars</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+
+
+  <div class="w3-row w3-padding-64">
+    <div class=" w3-container">
+      <h1 class="w3-text-teal">W3.CSS Layout</h1>
+
+<div class="w3-cell-row w3-margin-top">
+<div class="w3-container w3-black w3-cell">
+<p>Hello W3.CSS Layout.</p>
+<p>Hello W3.CSS Layout.</p>
+<p>Hello W3.CSS Layout.</p>
+<p>Hello W3.CSS Layout.</p>
+</div>
+<div class="w3-container w3-dark-grey w3-cell w3-cell-middle">
+<p>Hello W3.CSS Layout.</p>
+</div>
+<div class="w3-container w3-blue-grey w3-cell w3-cell-bottom">
+<p>Hello W3.CSS Layout.</p>
+</div>
+</div>
+
+
+
+<hr>
+
+<h2 class="w3-text">
+W3.CSS Layout Classes</h2>
+<p>W3.CSS version 2.90 / 2.91 introduced the following classes for "column-like" layout:</p>
+<table class="w3-table w3-striped w3-border">
+ <tr>
+  <th >Class</th>
+  <th>Description</th>
+ </tr>
+ <tr>
+ <td>w3-cell-row</td>
+  <td>Container for cells (columns).</td>
+ </tr>
+ <tr>
+ <td>w3-cell</td>
+  <td>Layout cell (column).</td>
+ </tr>
+ <tr>
+ <td>w3-cell-top</td>
+  <td>Aligns content at the top of a cell (column).</td>
+ </tr>
+ <tr>
+ <td>w3-cell-middle</td>
+  <td>Aligns content at the vertical middle of a cell (column).</td>
+ </tr>
+ <tr>
+ <td>w3-cell-bottom</td>
+  <td>Aligns content at the bottom of a cell (column).</td>
+ </tr>
+ <tr>
+ <td>w3-mobile</td>
+  <td>Adds mobile-first responsiveness to a cell (column).
+  Displays elements as block elements on mobile devices.</td>
+ </tr>
+ </table>
+
+<hr>
+<div class="w3-panel w3-card w3-orange">
+<p>The layout classes replace deprecated layout classes.<br>
+The new layout classer are more versatile and easier to use.<br>
+The deprecated layout classes are listed at the bottom of this page.<br></p>
+</div>
+
+<hr>
+<h2 class="w3-text">HTML Block Elements</h2>
+<p>Originally, HTML block elements display as vertical blocks.</p>
+<div class="w3-panel w3-card w3-orange">
+
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+
+&lt;div class=&quot;w3-container w3-red&quot;&gt;<br>&nbsp; 
+
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+&lt;div class=&quot;w3-container w3-green&quot;&gt;<br>&nbsp; 
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+</div>
+<h3>Output :</h3>
+
+<div class="w3-panel w3-card w3-red">
+<p>Hello W3.CSS Layout.</p>
+</div>
+<div class="w3-panel w3-card w3-green">
+<p>Hello W3.CSS Layout.</p>
+</div>
+</div>
+</div>
+<br>
+</div>
+
+
+
+<hr>
+<h2 class="w3-text">Layout Cells</h2>
+<p>The w3-cell class redifines block elements to display horizontally(like table cells):</p>
+<div class="w3-panel w3-card w3-orange">
+
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;w3-container w3-red w3-cell&quot;&gt;<br>&nbsp; 
+
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+&lt;div class=&quot;w3-container w3-green w3-cell&quot;&gt;<br>&nbsp; 
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+</div>
+<h3>Output :</h3>
+
+<div class="w3-panel w3-card w3-red w3-cell">
+<p>Hello W3.CSS Layout.</p>
+</div>
+<div class="w3-panel w3-card w3-green w3-cell">
+<p>Hello W3.CSS Layout.</p>
+</div>
+</div>
+
+<br>
+
+
+<hr>
+<h2 class="w3-text">Layout Container</h2>
+<p>The w3-cell-row is a container for cells (columns).<br>
+The width of the w3-cell-row container defines the total width of all the contained cells.<br>
+The default width is 100%</p>
+<div class="w3-panel w3-card w3-orange">
+
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;w3-cell-row&quot;&gt;<br>&nbsp; 
+&lt;div class=&quot;w3-container w3-red w3-cell&quot;&gt;<br>&nbsp;
+
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+&lt;div class=&quot;w3-container w3-green w3-cell&quot;&gt;<br>&nbsp; 
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+</div>
+<h3>Output :</h3>
+<p>If you change the width of the cell container, it will reduce the total width of the contained cells</p>
+
+<div class="w3-cell-row">
+<div class="w3-panel w3-card w3-red w3-cell">
+<p>Hello W3.CSS Layout.</p>
+</div>
+<div class="w3-panel w3-card w3-green w3-cell">
+<p>Hello W3.CSS Layout.</p>
+</div>
+</div>
+</div>
+<br>
+
+
+
+<hr>
+<h2 class="w3-text">Layout Cells are Self Adjusting</h2>
+<p>The w3-cell class has a very nice built-in self adjusting standard. Side-by-side elements will automatically adjust to the necessary width.</p>
+<div class="w3-panel w3-card w3-orange">
+
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+
+&lt;div class=&quot;w3-container w3-red w3-cell&quot;&gt;<br>&nbsp; 
+
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+&lt;div class=&quot;w3-container w3-green w3-cell&quot;&gt;<br>&nbsp; 
+&lt;p&gt;Hello W3.CSS Layout.Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-cell-row">
+<div class="w3-panel w3-card w3-red w3-cell">
+<p>Hello W3.CSS Layout.</p>
+</div>
+<div class="w3-panel w3-card w3-green w3-cell">
+<p>Hello W3.CSS Layout.Hello W3.CSS Layout.</p>
+</div>
+</div>
+</div>
+<br>
+
+
+<hr>
+<h2 class="w3-text">Layout Cells Adjust to Equal Height</h2>
+<p>Side-by-side w3-cell elements will also automatically self-adjust to equal height.</p>
+<div class="w3-panel w3-card w3-orange">
+
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+
+&lt;div class=&quot;w3-container w3-red w3-cell&quot;&gt;<br>&nbsp; 
+
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+&lt;div class=&quot;w3-container w3-green w3-cell&quot;&gt;<br>&nbsp; 
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-cell">
+<div class="w3-panel w3-card w3-red w3-cell">
+<p>Hello W3.CSS Layout.</p>
+</div>
+<div class="w3-panel w3-card w3-green w3-cell">
+<p>Hello W3.CSS Layout.</p>
+<p>Hello W3.CSS Layout.</p>
+<p>Hello W3.CSS Layout.</p>
+<p>Hello W3.CSS Layout.</p>
+</div>
+</div>
+</div>
+<br>
+
+<hr>
+<h2 class="w3-text">Responsive Layout</h2>
+<p>The w3-mobile class adds mobile first responsiveness to any HTML element.<br>
+Used together with w3-cell it will display the layout columns vertically on small screens/mobile phones and horizontally on medium/large screens.</p>
+<div class="w3-panel w3-card w3-orange">
+
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;w3-container w3-red w3-cell w3-mobile&quot;&gt;<br>&nbsp; 
+
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+&lt;div class=&quot;w3-container w3-green w3-cell w3-mobile&quot;&gt;<br>&nbsp;
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+&lt;div class=&quot;w3-container w3-blue w3-cell w3-mobile&quot;&gt;<br>&nbsp;
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-panel w3-card w3-red w3-cell">
+<p>Hello W3.CSS Layout.</p>
+</div>
+<div class="w3-panel w3-card w3-green w3-cell">
+<p>Hello W3.CSS Layout.</p>
+</div>
+<div class="w3-panel w3-card w3-blue w3-cell">
+<p>Hello W3.CSS Layout.</p>
+</div>
+</div>
+
+<br>
+
+
+<hr>
+<h2 class="w3-text">Easy Alignment</h2>
+<p>The w3-cell class makes it very easy to align text.<br>
+There are 3 different alignment classes:<br>
+w3-cell-top (default)<br>
+w3-cell-middle<br>
+w3-cell-bottom<br></p>
+<div class="w3-panel w3-card w3-orange">
+
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;w3-container w3-red w3-cell&quot;&gt;<br>&nbsp; 
+
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+<br>
+&lt;div class=&quot;w3-container w3-green w3-cell w3-cell-middle&quot;&gt;<br>&nbsp;
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+&lt;div class=&quot;w3-container w3-blue w3-cell w3-cell-bottom&quot;&gt;<br>&nbsp;
+&lt;p&gt;Hello W3.CSS Layout.&lt;/p&gt;<br>&nbsp;
+&lt;/div&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-panel w3-card w3-red w3-cell">
+<p>Hello W3.CSS Layout.</p>
+<p>Hello W3.CSS Layout.</p>
+<p>Hello W3.CSS Layout.</p>
+<p>Hello W3.CSS Layout.</p>
+</div>
+<div class="w3-panel w3-card w3-green w3-cell w3-cell-middle">
+<p>Hello W3.CSS Layout.</p>
+</div>
+<div class="w3-panel w3-card w3-blue w3-cell w3-cell-bottom">
+<p>Hello W3.CSS Layout.</p>
+</div>
+</div>
+<br>
+
+
+
+
+<hr>
+<h2 class="w3-text">Deprecated W3.CSS Table Layout Classes</h2>
+<table class="w3-table w3-striped w3-border">
+ <tr>
+<td>w3-layout-container</td>
+  <td>Use w3-cell-row instead.</td>
+ </tr>
+
+ <tr>
+<td>w3-layout-row</td>
+  <td></td>
+ </tr>
+ <tr>
+<td>w3-layout-cell</td>
+  <td>Use w3-cell instead.</td>
+ </tr>
+ <tr>
+<td>w3-layout-top</td>
+  <td>Use w3-cell-top instead.</td>
+ </tr>
+ <tr>
+<td>w3-layout-middle</td>
+  <td>Use w3-cell-middle instead.</td>
+ </tr>
+ <tr>
+<td>w3-layout-bottom</td>
+  <td>Use w3-cell-bottom instead.</td>
+ </tr>
+ <tr>
+<td>w3-layout-col</td>
+  <td>Use w3-mobile instead.</td>
+ </tr>
+</table>
+
+<div class="w3-panel w3-card w3-orange">
+<p>Deprecated classes will be removed from W3.CSS in version 4.0.</p>
+</div>
+
+<hr>
+
+  <!-- Pagination -->
+  <div class="w3-center">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">�</a>
+    </div>
+  </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+w3CodeColor();
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+

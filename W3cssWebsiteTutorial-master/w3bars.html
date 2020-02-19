@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <<a class="w3-bar-item w3-button w3-hover-black" href="overview.html">W3.CSS Overview</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="containers.html">W3.CSS Containers</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="panel.html">W3.CSS Panels</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Images.html">W3.CSS Images</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Display.html">W3.CSS Display</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3layout.html">W3.CSS Layout</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3tables.html">W3.CSS Tables</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3list.html">W3.CSS Lists</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3button.html">W3.CSS Buttons</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3bars.html">W3.CSS Bars</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class=" w3-container">
+      <h1 class="w3-text-teal">W3.CSS Bars</h1>
+      
+<hr>
+
+<h2 class="w3-text">Horizontal Bars</h2>
+<p>Horizontal bars are common web design elements.
+<br>The w3-bar class is used to style an horizontal bar.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;w3-bar w3-green&quot;&gt;<br>&nbsp; 
+&lt;div class=&quot;w3-bar-item&quot;&gt;India&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-bar-item&quot;&gt;China&lt;/div&gt;<br>&nbsp;
+&lt;div class=&quot;w3-bar-item&quot;&gt;Africa&lt;/div&gt;<br>
+ &lt;/div&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-bar w3-green">
+    <div class="w3-bar-item">India</div>
+    <div class="w3-bar-item">China</div>
+    <div class="w3-bar-item">Africa</div>
+  </div>
+</div>
+<br>
+</div>
+
+<hr>
+
+<h2 class="w3-text">Vertical Bars</h2>
+<p>Vertical bars (sidebars) are also common in web design.<br>
+The w3-bar-block class is used to style a vertical bar.
+</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;w3-bar-block w3-green&quot; style=&quot;width:100px&quot;&gt;<br>&nbsp; 
+&lt;div class=&quot;w3-bar-item&quot;&gt;India&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-bar-item&quot;&gt;China&lt;/div&gt;<br>&nbsp;
+&lt;div class=&quot;w3-bar-item&quot;&gt;Africa&lt;/div&gt;<br>
+ &lt;/div&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-bar-block w3-green"  style="width:100px">
+    <div class="w3-bar-item">India</div>
+    <div class="w3-bar-item">China</div>
+    <div class="w3-bar-item">Africa</div>
+  </div>
+</div>
+<br>
+</div>
+
+<hr>
+
+<h2 class="w3-text">Hover Colors</h2>
+<p>You can use any hover color to style a bar.<br>
+Mouse over the bar items to see the effect.
+</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;w3-bar w3-black&quot;&gt;<br>&nbsp; 
+&lt;div class=&quot;w3-bar-item w3-hover-red&quot;&gt;India&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-bar-item w3-hover-blue&quot;&gt;China&lt;/div&gt;<br>&nbsp;
+&lt;div class=&quot;w3-bar-item w3-hover-green&quot;&gt;Africa&lt;/div&gt;<br>
+ &lt;/div&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-bar w3-black">
+    <div class="w3-bar-item w3-hover-red">India</div>
+    <div class="w3-bar-item w3-hover-blue">China</div>
+    <div class="w3-bar-item w3-hover-green">Africa</div>
+  </div>
+</div>
+<br>
+</div>
+
+<hr>
+
+<h2 class="w3-text">Bar Links</h2>
+<p>Providing navigation is a typical use for bars.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;w3-bar w3-black&quot;&gt;<br>&nbsp; 
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-hover-green&quot;&gt;India&lt;/a&gt;<br>&nbsp; 
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-hover-green&quot;&gt;China&lt;/a&gt;<br>&nbsp;
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-hover-green&quot;&gt;Africa&lt;/a&gt;<br>
+ &lt;/div&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-bar w3-black">
+  <a href="#" class="w3-bar-item w3-hover-green">India</a>
+  <a href="#" class="w3-bar-item w3-hover-green">China</a>
+  <a href="#" class="w3-bar-item w3-hover-green">Africa</a>
+</div>
+</div>
+<br>
+</div>
+
+<hr>
+
+<h2 class="w3-text">Bar Buttons</h2>
+<p>The w3-button class is perfect for styling links in a bar.<br>Mouse over the bar items to see the effect.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;w3-bar w3-black&quot;&gt;<br>&nbsp; 
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot;&gt;India&lt;/a&gt;<br>&nbsp; 
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot;&gt;China&lt;/a&gt;<br>&nbsp;
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot;&gt;Africa&lt;/a&gt;<br>
+ &lt;/div&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-bar w3-black">
+  <a href="#" class="w3-bar-item w3-button">India</a>
+  <a href="#" class="w3-bar-item w3-button">China</a>
+  <a href="#" class="w3-bar-item w3-button">Africa</a>
+</div>
+</div>
+<br>
+</div>
+
+<hr>
+
+<h2 class="w3-text">Responsive Bar</h2>
+<p>The w3-mobile class is perfect for making bar items responsive.<br>Resize the window to see the effect.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;w3-bar w3-black&quot;&gt;<br>&nbsp; 
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button w3-mobile&quot;&gt;India&lt;/a&gt;<br>&nbsp; 
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button w3-mobile&quot;&gt;China&lt;/a&gt;<br>&nbsp;
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button w3-mobile&quot;&gt;Africa&lt;/a&gt;<br>
+ &lt;/div&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-bar w3-black">
+  <a href="#" class="w3-bar-item w3-button w3-mobile">India</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile">China</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile">Africa</a>
+</div>
+</div>
+<br>
+</div>
+
+<hr>
+
+<h2 class="w3-text">Right-Aligned Bar Items</h2>
+<p>The w3-right class is perfect for making bar items right-aligned.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;w3-bar w3-black&quot;&gt;<br>&nbsp; 
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot;&gt;India&lt;/a&gt;<br>&nbsp; 
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot;&gt;China&lt;/a&gt;<br>&nbsp;
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button w3-right&quot;&gt;Africa&lt;/a&gt;<br>
+ &lt;/div&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-bar w3-black">
+  <a href="#" class="w3-bar-item w3-button">India</a>
+  <a href="#" class="w3-bar-item w3-button">China</a>
+  <a href="#" class="w3-bar-item w3-button w3-right">Africa</a>
+</div>
+</div>
+<br>
+</div>
+
+<hr>
+
+
+  <!-- Pagination -->
+  <div class="w3-center">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+w3CodeColor();
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

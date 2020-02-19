@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Responsive</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+ <a class="w3-bar-item w3-button w3-hover-black" href="overview.html">W3.CSS Overview</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="containers.html">W3.CSS Containers</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="panel.html">W3.CSS Panels</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Images.html">W3.CSS Images</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Display.html">W3.CSS Display</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3layout.html">W3.CSS Layout</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3tables.html">W3.CSS Tables</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3list.html">W3.CSS Lists</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3button.html">W3.CSS Buttons</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3bars.html">W3.CSS Bars</a>
+</nav>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+
+
+  <div class="w3-row w3-padding-64">
+    <div class=" w3-container">
+      <h1 class="w3-text-teal">W3.CSS Responsive</h1>
+
+
+<hr>
+<p>W3.CSS includes a responsive, mobile-first grid system to handle layout:</p>
+<!-- First row -->
+<div class="w3-row-padding" style="margin:0 -16px 20px">
+
+<div class="w3-col m4 margtest">
+  <div class="w3-col s6 w3-green w3-center">
+    <p>1/2</p>
+  </div>
+  <div class="w3-col s6 w3-dark-grey w3-center w3-text-light-grey">
+    <p>1/2</p>
+  </div>
+</div>
+
+<div class="w3-col m4 margtest">
+  <div class="w3-col s4 w3-green w3-center">
+    <p>1/3</p>
+  </div>
+  <div class="w3-col s4 w3-dark-grey w3-center w3-text-light-grey">
+    <p>1/3</p>
+  </div>
+  <div class="w3-col s4 w3-dark-grey w3-center w3-text-light-grey">
+    <p>1/3</p>
+  </div>
+</div>
+
+<div class="w3-col m4 margtest">
+  <div class="w3-col s4 w3-dark-grey w3-center">
+    <p>1/3</p>
+  </div>
+  <div class="w3-col s8 w3-green w3-center w3-text-light-grey">
+    <p>2/3</p>
+  </div>
+</div>
+
+</div>
+
+<!-- Second row -->
+<div class="w3-row-padding" style="margin:0 -16px 20px">
+
+<div class="w3-col m4 margtest">
+  <div class="w3-col s3 w3-green w3-center">
+    <p>1/4</p>
+  </div>
+  <div class="w3-col s3 w3-dark-grey w3-center w3-text-light-grey">
+    <p>1/4</p>
+  </div>
+  <div class="w3-col s3 w3-dark-grey w3-center w3-text-light-grey">
+    <p>1/4</p>
+  </div>
+  <div class="w3-col s3 w3-dark-grey w3-center w3-text-light-grey">
+    <p>1/4</p>
+  </div>
+</div>
+
+<div class="w3-col m4 margtest">
+  <div class="w3-col s6 w3-green w3-center">
+    <p>1/2</p>
+  </div>
+  <div class="w3-col s3 w3-dark-grey w3-center">
+    <p>1/4</p>
+  </div>
+  <div class="w3-col s3 w3-dark-grey w3-center w3-text-light-grey">
+    <p>1/4</p>
+  </div>
+</div>
+
+<div class="w3-col m4 margtest">
+  <div class="w3-col s8 w3-green w3-center">
+    <p>2/3</p>
+  </div>
+  <div class="w3-col s4 w3-dark-grey w3-center w3-text-light-grey">
+    <p>1/3</p>
+  </div>
+</div>
+
+</div>
+
+<!-- Third row -->
+<div class="w3-row-padding" style="margin:0 -16px 20px">
+
+<div class="w3-col m4 margtest">
+  <div class="w3-col s9 w3-green w3-center">
+    <p>3/4</p>
+  </div>
+  <div class="w3-col s3 w3-dark-grey w3-center">
+    <p>1/4</p>
+  </div>
+</div>
+
+<div class="w3-col m4 margtest">
+  <div class="w3-col s3 w3-dark-grey w3-center">
+    <p>1/4</p>
+  </div>
+  <div class="w3-col s3 w3-dark-grey w3-center">
+    <p>1/4</p>
+  </div>
+  <div class="w3-col s6 w3-green w3-center">
+    <p>1/2</p>
+  </div>
+</div>
+
+<div class="w3-col m4 margtest">
+  <div class="w3-col s3 w3-dark-grey w3-center">
+    <p>1/4</p>
+  </div>
+  <div class="w3-col s6 w3-green w3-center">
+    <p>1/2</p>
+  </div>
+  <div class="w3-col s3 w3-dark-grey w3-center">
+    <p>1/4</p>
+  </div>
+</div>
+
+</div>
+
+<!-- Fourth row -->
+<div class="w3-row-padding" style="margin:0 -16px 20px">
+
+<div class="w3-col m4 margtest">
+  <div class="w3-col w3-center w3-dark-grey w3-text-light-grey" style="width:50px">
+    <p>50px</p>
+  </div>
+  <div class="w3-rest w3-green w3-center w3-text-light-grey">
+    <p>rest</p>
+  </div>
+</div>
+
+<div class="w3-col m4 margtest">
+  <div class="w3-col s3 w3-dark-grey w3-center">
+    <p>1/4</p>
+  </div>
+  <div class="w3-rest w3-green w3-center w3-text-light-grey">
+    <p>rest</p>
+  </div>
+</div>
+
+<div class="w3-col m4 margtest">
+  <div class="w3-col w3-center w3-dark-grey w3-text-light-grey w3-left" style="width:100px">
+    <p>100px</p>
+  </div>
+  <div class="w3-col w3-center w3-dark-grey w3-text-light-grey w3-right" style="width:45px">
+    <p>45px</p>
+  </div>
+  <div class="w3-rest w3-green w3-center w3-text-light-grey">
+    <p>rest</p>
+  </div>
+</div>
+
+</div>
+
+<!-- Grid Layout examples -->
+<div class="w3-row-padding" style="margin:0 -16px 20px">
+
+<div class="w3-col m4 margtest2">
+
+<div class="w3-col s6">
+  <div class="w3-col s12 w3-orange" style="width:92%;height:125px;margin-right:10px"></div>
+</div>
+
+<div class="w3-col s6">
+  <div class="w3-col s12 w3-green" style="height:75px;margin-bottom:10px"></div>
+  <div class="w3-col s6 w3-green" style="height:40px;"></div>
+  <div class="w3-col s6 w3-dark-grey" style="height:40px"></div>
+</div>
+
+</div>
+
+<div class="w3-col m4 margtest2">
+
+<div class="w3-col s3">
+  <div class="w3-col s12 w3-orange" style="width:85%;height:126px;margin-right:20px"></div>
+</div>
+
+<div class="w3-col s6">
+  <div class="w3-col s12 w3-green" style="height:50px;margin-bottom:10px"></div>
+  <div class="w3-col s6 w3-green" style="height:31px;"></div>
+  <div class="w3-col s6 w3-dark-grey" style="height:31px;margin-bottom:10px"></div>
+
+  <div class="w3-col s4 w3-green" style="height:25px;"></div>
+  <div class="w3-col s4 w3-dark-grey" style="height:25px"></div>
+  <div class="w3-col s4 w3-green" style="height:25px"></div>
+</div>
+
+<div class="w3-col s3">
+  <div class="w3-col s12 w3-orange" style="width:85%;height:126px;margin-left:10px"></div>
+</div>
+
+</div>
+
+<div class="w3-col m4 margtest2">
+
+<div class="w3-col s12">
+  <div class="w3-col s12 w3-orange" style="height:36px;margin-bottom:10px"></div>
+</div>
+
+<div class="w3-col s12">
+  <div class="w3-col s12 w3-green" style="height:26.5px;margin-bottom:10px"></div>
+  <div class="w3-col s8 w3-green" style="height:18px;"></div>
+  <div class="w3-col s4 w3-dark-grey" style="height:18px;margin-bottom:10px"></div>
+
+  <div class="w3-col s3 w3-green" style="height:15px;"></div>
+  <div class="w3-col s3 w3-dark-grey" style="height:15px"></div>
+  <div class="w3-col s3 w3-green" style="height:15px"></div>
+  <div class="w3-col s3 w3-dark-grey" style="height:15px"></div>
+</div>
+</div>
+</div>
+
+
+
+<hr>
+<h2>W3.CSS Responsive Classes</h2>
+<p>W3.CSS's grid system is responsive, and the columns will re-arrange automatically depending on the screen size.</p>
+<table class="w3-table w3-bordered w3-striped w3-border">
+ <tr>
+  <th style="width:30%">Class</th>
+  <th>Description</th>
+ </tr>
+ <tr>
+  <td>w3-half</td>
+  <td>Occupies 1/2 of the window (on medium and large screens)</td>
+ </tr>
+ <tr>
+  <td>w3-third</td>
+  <td>Occupies 1/3 of the window (on medium and large screens)</td>
+ </tr>
+ <tr>
+  <td>w3-twothird</td>
+  <td>Occupies 2/3 of the window (on medium and large screens)</td>
+ </tr>
+ <tr>
+  <td>w3-quarter</td>
+  <td>Occupies 1/4 of the window (on medium and large screens)</td>
+ </tr>
+ <tr>
+  <td>w3-threequarter</td>
+  <td>Occupies 3/4 of the window (on medium and large screens)</td>
+ </tr>
+ <tr>
+  <td>w3-rest</td>
+  <td>Occupies the rest of the column width</td>
+ </tr>
+ <tr>
+  <td>w3-col</td>
+  <td>Defines one column in a 12-column responsive grid</td>
+ </tr>
+  <tr>
+    <td>w3-mobile</td>
+    <td>Adds mobile-first responsiveness to a cell (column).<br>Displays  
+    elements as block elements on mobile devices.</td>
+  </tr>
+</table>
+
+<p>The responsive classes above must be placed inside a w3-row class (or w3-row-padding class) to be fully responsive.</p>
+<table class="w3-table w3-bordered w3-striped w3-border">
+ <tr>
+  <th style="width:30%">Class</th>
+  <th>Description</th>
+ </tr>
+ <tr>
+  <td>w3-row</td>
+  <td>Container for responsive classes, with no padding </td>
+ </tr>
+ <tr>
+  <td>w3-row-padding</td>
+  <td>Container for responsive classes, with 8px left and right 
+  padding </td>
+ </tr>
+ <tr>
+  <td>w3-content</td>
+  <td>Container for fixed size centered content</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>w3-hide-small</td>
+  <td>Hides content on small screens (less than 601px)</td>
+ </tr>
+ <tr>
+  <td>w3-hide-medium</td>
+  <td>Hides content on medium screens</td>
+ </tr>
+ <tr>
+  <td>w3-hide-large</td>
+  <td>Hides content on large screens (larger than 992px)</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>l1 - l12</td>
+  <td>Responsive sizes for large screens</td>
+ </tr>
+ <tr>
+  <td>m1 - m12</td>
+  <td>Responsive sizes for medium screens</td>
+ </tr>
+ <tr>
+  <td>s1 - s12</td>
+  <td>Responsive sizes for small screens</td>
+ </tr>
+</table>
+
+
+<hr>
+<h2>The w3-half Class</h2>
+<p>The width of the w3-half class is 1/2 of the parent element 
+(style=&quot;width:50%&quot;).</p>
+<p>On screens smaller than 601 pixels it resizes to 100%.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;w3-row&quot;&gt;<br>&nbsp; &lt;div class=&quot;w3-half w3-container w3-green&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-half&lt;/h2&gt; <br>&nbsp; 
+&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-half w3-container&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-half&lt;/h2&gt; <br>&nbsp; 
+&lt;/div&gt;<br>&lt;/div&gt;
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-row w3-border">
+    <div class="w3-half w3-container w3-green">
+      <h3>w3-half</h3>  
+  </div>
+  <div class="w3-half w3-container">
+  <h3>w3-half</h3>  
+  </div>
+</div>
+</div>
+</div>
+<br>
+
+
+
+<hr>
+<h2>The w3-third Class</h2>
+<p>The width of the w3-third class is 1/3 of the parent element 
+(style=&quot;width:33.33%&quot;).</p>
+<p>On screens smaller than 601 pixels it resizes to 100%.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;w3-row&quot;&gt;<br>&nbsp; &lt;div class=&quot;w3-third w3-container w3-green&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-third&lt;/h2&gt; <br>&nbsp; 
+&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-third w3-container&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-third&lt;/h2&gt; <br>&nbsp; 
+&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-third w3-container&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-third&lt;/h2&gt;<br>&nbsp; 
+&lt;/div&gt;<br>&lt;/div&gt;
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-row w3-border">
+<div class="w3-third w3-container w3-theme">
+  <h3>w3-third</h3>  
+</div>
+<div class="w3-third w3-container">
+  <h3>w3-third</h3>  
+</div>
+<div class="w3-third w3-container">
+  <h3>w3-third</h3>  
+</div>
+</div>
+</div>
+</div>
+<br>
+
+
+<hr>
+
+<h2>The w3-twothird Class</h2>
+<p>The width of the <strong>w3-twothird</strong> class is 2/3 of the parent element 
+(style=&quot;width:66.66%&quot;).</p>
+<p>On screens smaller than 601 pixels it resizes to 100%.&nbsp;</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;w3-row&quot;&gt;<br>&nbsp; &lt;div class=&quot;w3-green w3-container 
+ w3-twothird&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-twothird&lt;/h2&gt; <br>&nbsp; 
+&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-container w3-third&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-third&lt;/h2&gt; <br>&nbsp; 
+&lt;/div&gt;<br>&lt;/div&gt;
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-row w3-border">
+<div class="w3-twothird w3-container w3-theme">
+  <h3>w3-twothird</h3>  
+</div>
+<div class="w3-third w3-container">
+  <h3>w3-third</h3>  
+</div>
+</div>
+</div>
+</div>
+<br>
+
+
+
+<hr>
+<h2>The w3-quarter Class</h2>
+<p>The width of the w3-quarter class is 1/4 of the parent element 
+(style=&quot;width:25%&quot;).</p>
+<p>On screens smaller than 601 pixels it resizes to 100%.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;w3-row&quot;&gt;<br>&nbsp; &lt;div class=&quot;w3-green w3-container 
+ w3-quarter&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-quarter&lt;/h2&gt; <br>&nbsp; 
+&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-container w3-quarter&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-quarter&lt;/h2&gt; <br>&nbsp; 
+&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-container w3-quarter&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-quarter&lt;/h2&gt;<br>&nbsp; 
+&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-container w3-quarter&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-quarter&lt;/h2&gt;<br>&nbsp; 
+&lt;/div&gt;<br>&lt;/div&gt;
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-row w3-border">
+    <div class="w3-quarter w3-container w3-theme">
+      <h3>w3-quarter</h3>  
+  </div>
+  <div class="w3-quarter w3-container">
+  <h3>w3-quarter</h3>  
+  </div>
+  <div class="w3-quarter w3-container">
+  <h3>w3-quarter</h3>  
+  </div>
+  <div class="w3-quarter w3-container">
+  <h3>w3-quarter</h3>  
+  </div>
+</div>
+</div>
+</div>
+<br>
+
+
+
+<hr>
+<h2>The w3-threequarter Class</h2>
+<p>The width of the w3-threequarter class is 3/4 of the parent element 
+(style=&quot;width:75%&quot;).</p>
+<p>On screens smaller than 601 pixels it resizes to 100%.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;w3-row&quot;&gt;<br>&nbsp; &lt;div class=&quot;w3-green w3-container 
+ w3-threequarter&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-threequarter&lt;/h2&gt; <br>&nbsp; 
+&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-container w3-quarter&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-quarter&lt;/h2&gt; <br>&nbsp; 
+&lt;/div&gt;<br>&lt;/div&gt;
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-row w3-border">
+  <div class="w3-threequarter w3-container w3-theme">
+  <h3>w3-threequarter</h3>  
+  </div>
+  <div class="w3-quarter w3-container">
+  <h3>w3-quarter</h3>  
+  </div>
+</div>
+</div>
+</div>
+<br>
+
+
+
+
+
+
+<hr>
+<h2>Combinations</h2>
+
+<div class="w3-row w3-border">
+  <div class="w3-quarter w3-container">
+  <h3>w3-quarter</h3>  
+  </div>
+  <div class="w3-half w3-container w3-theme">
+  <h3>w3-half</h3>
+  </div>
+  <div class="w3-quarter w3-container">
+  <h3>w3-quarter</h3>  
+  </div>
+</div>
+<br>      
+<div class="w3-row w3-border">
+  <div class="w3-quarter w3-container">
+  <h3>w3-quarter</h3>  
+  </div>
+  <div class="w3-quarter w3-container">
+  <h3>w3-quarter</h3>  
+  </div>
+  <div class="w3-half w3-container w3-theme">
+  <h3>w3-half</h3>
+  </div>
+</div>       
+<br>      
+<div class="w3-row w3-border">
+  <div class="w3-half w3-container w3-theme">
+  <h3>w3-half</h3>
+  </div>
+  <div class="w3-quarter w3-container">
+  <h3>w3-quarter</h3>  
+  </div>
+  <div class="w3-quarter w3-container">
+  <h3>w3-quarter</h3>  
+  </div>
+</div>
+<br>      
+<div class="w3-row w3-border w3-hide-small">
+  <div class="w3-third w3-container">
+  <h3>w3-third</h3>
+  </div>
+  <div class="w3-twothird w3-container w3-theme">
+  <h3>w3-twothird</h3>  
+  </div>
+</div>
+<br>      
+<div class="w3-row w3-border w3-hide-small">
+  <div class="w3-quarter w3-container">
+  <h3>w3-quarter</h3>
+  </div>
+  <div class="w3-threequarter w3-container w3-theme">
+  <h3>w3-threequarter</h3>  
+  </div>
+</div>
+
+
+
+
+<hr>
+<h2>Nested Rows</h2>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;w3-row&quot;&gt;<br>&nbsp; &lt;div class=&quot;w3-half w3-container&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-half&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;w3-row&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;div class=&quot;w3-half w3-container w3-red&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-half&lt;/h2&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;This is a 
+paragraph.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;div class=&quot;w3-half w3-container&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-half&lt;/h2&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;This is a 
+paragraph.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-half w3-container&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-half&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;w3-row&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;div class=&quot;w3-half w3-container w3-red&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-half&lt;/h2&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;This is a 
+paragraph.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;div class=&quot;w3-half w3-container&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;h2&gt;w3-half&lt;/h2&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;This is a 
+paragraph.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;
+</div>
+</div>
+<br>
+
+
+<hr>
+<h2>Columns Using Rest</h2>
+<p>The w3-col class defines one column in a 12-column 
+responsive grid.</p>
+<p>The w3-rest class will occupy the rest of the width.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;w3-row&quot;&gt;<br>&nbsp; &lt;div class=&quot;w3-col&quot; style=&quot;width:150px&quot;&gt;&lt;p&gt;I 
+  am 150px&lt;/p&gt;&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-rest 
+w3-green&quot;&gt;&lt;p&gt;I am the rest&lt;/p&gt;&lt;/div&gt;<br>&lt;/div&gt;
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-row w3-border">
+  <div class="w3-col w3-container" style="width:150px"><p>I am 150px</p></div>
+  <div class="w3-rest w3-container w3-green"><p>I am the rest</p></div>
+</div>
+</div>
+</div>
+<br>
+
+
+
+
+<hr>
+<h2>Columns Using Percent</h2>
+<p>You can also use the CSS width property to set the width in percent.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;w3-row&quot;&gt;<br>&nbsp; &lt;div class=&quot;w3-col&quot; 
+ style=&quot;width:20%&quot;&gt;&lt;p&gt;20%&lt;/p&gt;&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-col&quot; style=&quot;width:60%&quot;&gt;&lt;p&gt;60%&lt;/p&gt;&lt;/div&gt;<br>
+  &nbsp; &lt;div 
+ class=&quot;w3-col&quot; style=&quot;width:20%&quot;&gt;&lt;p&gt;20%&lt;/p&gt;&lt;/div&gt;<br>&lt;/div&gt;
+ </div>
+ <h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-row w3-border">
+<div class="w3-col w3-container w3-theme" style="width:20%"><p>20%</p></div>
+<div class="w3-col w3-container" style="width:60%"><p>60%</p></div>
+<div class="w3-col w3-container w3-theme" style="width:20%"><p>20%</p></div>
+</div>
+</div>
+</div>
+<br>
+
+
+
+
+<hr>
+<h2>The w3-content Class</h2>
+<p>The <strong>w3-content</strong> class defines a container for fixed size centered content. Use the CSS max-width property to override the default width (980px).</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;body class=&quot;w3-content&quot; style=&quot;max-width:500px&quot;&gt;<br><br>&nbsp; 
+page content...<br><br>&lt;/body&gt;
+</div>
+</div>
+<br>
+
+
+
+
+<hr>
+<h2>w3-row vs. w3-row-padding</h2>
+<p>The w3-row class defines a container with no padding, while the w3-row-padding class adds a 8px left and right padding to each column</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class="w3-row"&gt;<br>&nbsp; &lt;div class="w3-col s4"&gt;&lt;img src="img_lights.jpg"&gt;&lt;/div&gt;<br>&nbsp; 
+&lt;div class="w3-col s4"&gt;&lt;img src="img_nature.jpg&quot;&gt;&lt;/div&gt;<br>&nbsp; &lt;div class="w3-col 
+  s4"&gt;&lt;img src="img_snowtops.jpg"&gt;&lt;/div&gt;<br>&lt;/div&gt;<br>
+<br>&lt;div class="w3-row-padding"&gt;<br>&nbsp; &lt;div class="w3-col s4"&gt;&lt;img src="img_lights.jpg"&gt;&lt;/div&gt;<br>&nbsp; 
+&lt;div class="w3-col s4"&gt;&lt;img src="img_nature.jpg&quot;&gt;&lt;/div&gt;<br>&nbsp; &lt;div class="w3-col 
+  s4"&gt;&lt;img src="img_snowtops.jpg"&gt;&lt;/div&gt;<br>&lt;/div&gt;
+  </div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<p>w3-row:</p>
+<div class="w3-row w3-border">
+<div class="w3-col s4 w3-green">
+  <h3>w3-third</h3>  
+</div>
+<div class="w3-col s4">
+  <h3>w3-third</h3>  
+</div>
+<div class="w3-col s4">
+  <h3>w3-third</h3>  
+</div>
+</div>
+
+<p>w3-row-padding:</p>
+<div class="w3-row-padding w3-border">
+<div class="w3-col s4 w3-green">
+  <h3>w3-third</h3>  
+</div>
+<div class="w3-col s4">
+  <h3>w3-third</h3>  
+</div>
+<div class="w3-col s4">
+  <h3>w3-third</h3>  
+</div>
+</div>
+
+<div class="w3-row">
+<p>w3-row:</p>  
+<div class="w3-col s4">
+    <img src="img_lights.jpg" style="width:100%">
+  </div>
+  <div class="w3-col s4">
+    <img src="img_nature.jpg" style="width:100%">
+  </div>
+  <div class="w3-col s4">
+    <img src="img_snowtops.jpg" style="width:100%">
+  </div>
+</div>
+
+<div class="w3-row-padding">
+<p>w3-row-padding:</p>  
+  <div class="w3-col s4">
+    <img src="img_lights.jpg" style="width:100%">
+  </div>
+  <div class="w3-col s4">
+    <img src="img_nature.jpg" style="width:100%">
+  </div>
+  <div class="w3-col s4">
+    <img src="img_snowtops.jpg" style="width:100%">
+  </div>
+</div>
+
+
+
+
+<hr>
+<h2>Stretch Padded Rows</h2>
+<p>The w3-stretch class removes the right and left margins from an element. This class is often used to stretch a padded row</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;div class=&quot;w3-row-padding w3-section w3-stretch&quot;&gt;<br>&nbsp; &lt;div 
+  class=&quot;w3-col s4&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;img src=&quot;img_nature_wide.jpg&quot;&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-col s4&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+  &lt;img src=&quot;img_snow_wide.jpg&quot;&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; 
+  &lt;div class=&quot;w3-col s4&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;img 
+  src=&quot;img_mountains_wide.jpg&quot;&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;
+  </div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<p>An example with w3-stretch:</p>
+<div class="w3-row-padding w3-section w3-stretch">
+  <div class="w3-col s4">
+    <img src="img_lights.jpg" style="width:100%">
+  </div>
+  <div class="w3-col s4">
+    <img src="img_nature.jpg" style="width:100%">
+  </div>
+  <div class="w3-col s4">
+    <img src="img_snowtops.jpg" style="width:100%">
+  </div>
+</div>
+
+<p>An example without w3-stretch:</p>
+<div class="w3-row-padding w3-section">
+  <div class="w3-col s4">
+    <img src="img_lights.jpg" style="width:100%">
+  </div>
+  <div class="w3-col s4">
+    <img src="img_nature.jpg" style="width:100%">
+  </div>
+  <div class="w3-col s4">
+    <img src="img_snowtops.jpg" style="width:100%">
+  </div>
+</div>
+</div>
+</div>
+<br>
+
+
+<hr>
+<h2>Responsive Show / Hide</h2>
+<p>The w3-hide-small,w3-hide-medium, and w3-hide-large classes hide elements on specific screen sizes.</p>
+<p>Note: Resize the browser window to understand how it works.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;w3-container w3-hide-small w3-red&quot;&gt;<br>&nbsp; &lt;p&gt;w3-hide-small will 
+ be hidden on small screens (phones)&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;div 
+ class=&quot;w3-container w3-hide-medium w3-green&quot;&gt;<br>&nbsp; &lt;p&gt;w3-hide-medium will 
+ be hidden on medium screens (tablets)&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;div 
+ class=&quot;w3-container w3-hide-large w3-blue&quot;&gt;<br>&nbsp; &lt;p&gt;w3-hide-large will be 
+ hidden on large screens (laptops/desktop)&lt;/p&gt;<br>&lt;/div&gt;
+ </div>
+ <h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+ <div class="w3-container w3-hide-small w3-red"><p>w3-hide-small will be hidden on small screens (phones)</p></div>
+<div class="w3-container w3-hide-medium w3-green"><p>w3-hide-medium will be hidden on medium screens (tablets)</p></div>
+<div class="w3-container w3-hide-large w3-blue"><p>w3-hide-large will be hidden on large screens (laptops/desktop)</p></div>
+</div>
+</div>
+<br>
+
+
+
+
+<hr>
+<h2>The w3-mobile Class</h2>
+<p>The w3-mobile class adds mobile-first responsiveness to any element.</p>
+<p>It adds display:block and width:100% to an element on screens that are less than 600px wide.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;a class=&quot;w3-button w3-mobile&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+ </div>
+ <h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-container">
+  <h2>The w3-mobile Class</h2>
+  <p>The <strong>w3-mobile</strong> class adds mobile-first responsivenss to any element.</p>
+  <p>It adds display:block and width:100% to an element on screens that are less than 600px wide.</p>
+
+  <p>Resize the browser window to see the effect:</p>
+  <button class="w3-button w3-black w3-mobile">Home</button>
+  <button class="w3-button w3-black w3-mobile">Link 1</button>
+  <button class="w3-button w3-black w3-mobile">Link 2</button>
+  <button class="w3-button w3-black w3-mobile">Link 3</button>
+</div>
+</div>
+</div>
+<br>
+
+
+<hr>
+<h2>Screen Resolutions</h2>
+<p>The built-in responsiveness of W3.CSS uses the DP size of a screen.</p>
+<p>W3.CSS will treat an iPhone 6 with a resolution of 750 x 1334 pixels as a small screen of 375 x 667 pixels 
+DP.</p>
+<p>Small screens are less than 601 pixels DP, medium screens are less than 993 pixels DP.</p>
+<p>Below is a list of typical device resolutions and reported DP sizes:</p>
+<div class="w3-section w3-center w3-blue w3-round w3-round-xlarge" style="float:left;border:6px solid black;width:140px;height:203px">
+<h4>Iphone 4</h4>
+<p>Resolution<br>
+640 x 960</p>
+<p>DP<br>
+320 x 480</p>
+</div>
+
+<div class="w3-section w3-margin-left w3-center w3-blue w3-round-xlarge" style="float:left;border:6px solid black;width:140px;height:245px">
+<h4>Iphone 5</h4>
+<p>Resolution<br>
+640 x 1136</p>
+<p>DP<br>
+320 x 528</p>
+</div>
+
+<div class="w3-section w3-margin-left w3-center w3-blue w3-round-xlarge" style="float:left;border:6px solid black;width:161px;height:287px">
+<h4>Iphone 6</h4>
+<p>Resolution<br>
+750 x 1334</p>
+<p>DP<br>
+375 x 667</p>
+</div>
+
+<div class="w3-section w3-margin-left w3-center w3-blue w3-round-xlarge" style="float:left;border:6px solid black;width:189px;height:336px">
+<h4>Iphone 6s</h4>
+<p>Resolution<br>
+1080 x 1920</p>
+<p>DP<br>
+414 x 736</p>
+</div>
+
+<div class="w3-clear"></div>
+
+<div class="w3-section w3-center w3-blue w3-round-xlarge" style="float:left;border:6px solid black;width:175px;height:308px">
+<h4>Galaxy S6</h4>
+<p>Resolution<br>
+1440 x 2560</p>
+<p>DP<br>
+360 x 640</p>
+</div>
+
+<div class="w3-section w3-margin-left w3-center w3-blue w3-round-xlarge" style="float:left;border:6px solid black;width:196px;height:350px">
+<h4>Note 4</h4>
+<p>Resolution<br>
+1440 x 2560</p>
+<p>DP<br>
+400 x 853</p>
+</div>
+
+<div class="w3-section w3-margin-left w3-center w3-blue w3-round-xlarge" style="float:left;border:6px solid black;width:203px;height:364px">
+<h4>Nexus 6</h4>
+<p>Resolution<br>
+1440 x 2560</p>
+<p>DP<br>
+411 x 731</p>
+</div>
+
+<div class="w3-clear"></div>
+
+<div class="w3-section w3-center w3-red w3-round-xlarge" style="float:left;border:7px solid black;width:329px;height:441px">
+<h3>iPad Mini</h3>
+<p>Resolution<br>
+768 x 1024</p>
+<p>DP<br>
+768 x 1024</p>
+</div>
+
+<div class="w3-section w3-margin-left w3-center w3-red w3-round-xlarge" style="float:left;border:7px solid black;width:406px;height:546px">
+<h3>iPad</h3>
+<p>Resolution<br>
+1536 x 2048</p> 
+<p>DP<br>
+768 x 1024</p>
+</div>
+
+<div class="w3-clear"></div>
+
+<div class="w3-section w3-center w3-green w3-round-xlarge w3-clear" style="border:9px solid black;width:80%;height:350px">
+<h2>Typical Laptop</h2>
+<p>Resolution<br>
+1366 x 768</p>
+<p>DP<br>
+1366 x 768</p>
+</div>
+
+<div class="w3-section w3-center w3-yellow w3-round-xlarge w3-clear" style="border:9px solid black;width:100%;height:600px">
+<h2>Typical Desktop</h2>
+<p>Resolution<br>
+1920 x 1080</p>
+<p>DP<br>
+1920 x 1080</p>
+</div>
+
+
+
+
+<hr>
+<h2>12 Column Responsive Fluid Grid</h2>
+<p>W3.CSS also supports an advanced 12 column responsive fluid grid.
+Many web pages are based on a grid-view, which means that the page is divided into columns: ...<br>
+ It makes it easier to place elements on the page.<br>
+ A responsive grid-view often has 12 columns, and has a total width of 100%, and will shrink and expand as you resize the browser window.</p>
+<p class="w3-large">Resize the page to see the effect!</p>
+
+<div class="w3-border">
+<div class="w3-row">
+  <div class="w3-col m1 w3-center w3-grey">1</div>
+  <div class="w3-col m1 w3-center">2</div>
+  <div class="w3-col m1 w3-center w3-grey">3</div>
+  <div class="w3-col m1 w3-center">4</div>
+  <div class="w3-col m1 w3-center w3-grey">5</div>
+  <div class="w3-col m1 w3-center">6</div>
+  <div class="w3-col m1 w3-center w3-grey">7</div>
+  <div class="w3-col m1 w3-center">8</div>
+  <div class="w3-col m1 w3-center w3-grey">9</div>
+  <div class="w3-col m1 w3-center">10</div>
+  <div class="w3-col m1 w3-center w3-grey">11</div>
+  <div class="w3-col m1 w3-center">12</div>
+</div>
+<div class="w3-row">
+<div class="w3-col w3-container m4 l3 w3-blue" style="height:230px">
+
+<p>This part will occupy 12 columns on a small screen,
+4 on a medium screen, and 3 on a large screen.</p>
+</div>
+<div class="w3-col m8 l9 w3-container w3-green" style="height:230px">    
+<p>This part will occupy 12 columns on a small screen,
+8 on a medium screen, and 9 on a large screen.</p>
+</div>
+</div>
+<div class="w3-row">
+  <div class="w3-col m1 w3-center w3-grey">1</div>
+  <div class="w3-col m1 w3-center">2</div>
+  <div class="w3-col m1 w3-center w3-grey">3</div>
+  <div class="w3-col m1 w3-center">4</div>
+  <div class="w3-col m1 w3-center w3-grey">5</div>
+  <div class="w3-col m1 w3-center">6</div>
+  <div class="w3-col m1 w3-center w3-grey">7</div>
+  <div class="w3-col m1 w3-center">8</div>
+  <div class="w3-col m1 w3-center w3-grey">9</div>
+  <div class="w3-col m1 w3-center">10</div>
+  <div class="w3-col m1 w3-center w3-grey">11</div>
+  <div class="w3-col m1 w3-center">12</div>
+</div>
+</div>
+
+
+
+<hr>
+
+  <!-- Pagination -->
+  <div class="w3-center">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">�</a>
+    </div>
+  </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+w3CodeColor();
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

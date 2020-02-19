@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Tables</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+<a class="w3-bar-item w3-button w3-hover-black" href="overview.html">W3.CSS Overview</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="containers.html">W3.CSS Containers</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="panel.html">W3.CSS Panels</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Images.html">W3.CSS Images</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Display.html">W3.CSS Display</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3layout.html">W3.CSS Layout</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3tables.html">W3.CSS Tables</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3list.html">W3.CSS Lists</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3button.html">W3.CSS Buttons</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3bars.html">W3.CSS Bars</a>
+</nav>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+
+
+  <div class="w3-row w3-padding-64">
+    <div class=" w3-container">
+      <h1 class="w3-text-teal">W3.CSS Tables</h1>
+
+
+<hr>
+<table class="w3-table w3-bordered w3-striped w3-border test w3-hoverable">
+<tr class="w3-green">
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr>
+<tr>
+  <td>Bo</td>
+  <td>Nilsson</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Mike</td>
+  <td>Ross</td>
+  <td>35</td>
+</tr>
+</table>
+
+<hr>
+
+<h2>W3.CSS Table Classes</h2>
+<p>W3.CSS provides the following classes for tables:</p>
+<table class="w3-table-all">
+ <tr>
+  <th>Class</th>
+  <th>Defines</th>
+ </tr>
+ <tr>
+  <td>w3-table</td>
+  <td>Container for an HTML table</td>
+ </tr>
+ <tr>
+  <td>w3-striped</td>
+  <td>Striped table</td>
+ </tr>
+ <tr>
+  <td>w3-border</td>
+  <td>Bordered table</td>
+ </tr>
+ <tr>
+  <td>w3-bordered</td>
+  <td>Bordered lines</td>
+ </tr>
+ <tr>
+  <td>w3-centered</td>
+  <td>Centered table content</td>
+ </tr>
+ <tr>
+  <td>w3-hoverable</td>
+  <td>Hoverable table</td>
+ </tr>
+ <tr>
+  <td>w3-table-all</td>
+  <td>All properties set</td>
+ </tr>
+</table>
+
+<hr>
+
+<h2>Basic Table</h2>
+<p>The w3-table class is used to display a basic table.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table"&gt;<br>&lt;tr&gt;<br>&nbsp; &lt;th&gt;First Name&lt;/th&gt;<br>&nbsp; 
+&lt;th&gt;Last Name&lt;/th&gt;<br>&nbsp; &lt;th&gt;Points&lt;/th&gt;<br>&lt;/tr&gt;<br>
+&lt;tr&gt;<br>&nbsp; &lt;td&gt;Jill&lt;/td&gt;<br>&nbsp; &lt;td&gt;Smith&lt;/td&gt;<br>&nbsp; &lt;td&gt;50&lt;/td&gt;<br>
+&lt;/tr&gt;<br>&lt;/table&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table">
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+<hr>
+<h2>Striped Table</h2>
+<p>The w3-striped class is used to add zebra-stripes to a table.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table w3-striped"&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table w3-striped">
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr>
+</table>
+</div>
+</div>
+<br>
+
+<hr>
+
+<h2>Bordered Table</h2>
+<p>The w3-bordered class adds a bottom border to each table row.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table w3-bordered"&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table w3-bordered"><tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+
+<hr>
+
+<h2>Striped Bordered Table</h2>
+<p>Combine the w3-striped class and the w3-bordered class to create a striped bordered table.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table w3-striped w3-bordered"&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table w3-bordered w3-striped"><tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+
+<hr>
+
+<h2>Border Around a Table</h2>
+<p>The w3-border class is used to display a border around a table.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table w3-striped w3-border"&gt; 
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table w3-striped w3-border"><tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+	
+<hr>
+
+<h2>Displaying it All</h2>
+<p>The w3-table-all class combines all of the classes above.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table-all"&gt; 
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table-all">
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr>
+</table>
+</div>
+</div>
+<br>
+
+
+<hr>
+<h2>Flipping the Stripes</h2>
+<p>To flip the stripes (start with the light-grey color), add a &lt;thead&gt; element around the table header row. 
+You must also define a color to be used for the table header row.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;thead&gt;<br>&nbsp; &lt;tr class=&quot;w3-light-grey&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;First Name&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp; 
+ &lt;th&gt;Last Name&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Points&lt;/th&gt;<br>&nbsp; &lt;/tr&gt;<br>
+ &lt;/thead&gt;
+ </div>
+ <h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table-all">
+<thead>
+<tr class="w3-light-grey">
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+</thead>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr>
+<tr>
+  <td>Bo</td>
+  <td>Nilson</td>
+  <td>35</td>
+</tr>
+</table>
+</div>
+</div>
+<br>
+
+
+<hr>
+<h2>Centering all Content</h2>
+<p>The w3-centered class centers the content of the table.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table-all w3-centered"&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table-all w3-centered">
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+
+<hr>
+<h2>Centering one Column</h2>
+<p>The w3-center class centers the content of a column.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table-all"&gt;<br>&lt;tr&gt;<br>&nbsp;&nbsp;&lt;th&gt;First 
+  Name&lt;/th&gt;<br>&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt;<br>&nbsp; 
+  &lt;th class=&quot;w3-center&quot;&gt;Points&lt;/th&gt;<br>&lt;/tr&gt;<br>
+</div>
+ <h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table-all">
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th class="w3-center">Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td class="w3-center">50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td class="w3-center">94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td class="w3-center">67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+
+<hr>
+<h2>Right Align one Column</h2>
+<p>The w3-right-align class right aligns the content of a column.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table-all"&gt;<br>&lt;tr&gt;<br>&nbsp; &lt;th&gt;First Name&lt;/th&gt;<br>&nbsp; 
+  &lt;th&gt;Last Name&lt;/th&gt;<br>&nbsp; &lt;th class=&quot;w3-right-align&quot;&gt;Points&lt;/th&gt;<br>&lt;/tr&gt;<br><br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table-all">
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th class="w3-right-align">Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td class="w3-right-align">50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td class="w3-right-align">94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td class="w3-right-align">67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+
+<hr>
+
+<h2>Hoverable Table</h2>
+<p>The w3-hoverable class adds a grey background color on mouse-over.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table-all 
+ w3-hoverable"&gt; 
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table w3-bordered w3-striped w3-border w3-hoverable">
+<thead>
+<tr class="w3-light-grey">
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+</thead>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr>
+</table>
+</div>
+</div>
+<br>
+
+
+
+<hr>
+
+<h2>Hover Colors</h2>
+<p>If you want a specific hover color, add any of the w3-hover-color classes to each &lt;tr&gt; element.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;tr class=&quot;w3-hover-green&quot;&gt;
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table w3-bordered w3-striped w3-border w3-hoverable">
+<thead>
+<tr class="w3-light-grey w3-hover-red">
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+</thead>
+<tr class="w3-hover-green">
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr class="w3-hover-blue">
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr class="w3-hover-black">
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr>
+</table>
+</div>
+</div>
+<br>
+
+
+<hr>
+
+<h2>Combining W3.CSS Classes</h2>
+<div class="w3-panel w3-card w3-orange">
+<p>Many W3.CSS classes can be used on all HTML elements.</p>
+<p>For example: border classes, color classes, font classes, card classes,and more.</p>
+</div>
+
+
+<hr>
+<h2>Colored Table Header</h2>
+<p>Use any of the w3-color classes to display a colored row.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;tr class=&quot;w3-red&quot;&gt;<br>&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt;<br>&nbsp;&nbsp;&lt;th&gt;Last 
+ Name&lt;/th&gt;<br>&nbsp;&nbsp;&lt;th&gt;Points&lt;/th&gt;<br>&lt;/tr&gt;
+ </div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table w3-striped w3-border">
+<thead>
+<tr class="w3-red">
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+</thead>
+
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+
+<hr>
+<h2>Colored Table</h2>
+<p>Use any of the w3-color classes to display a colored table.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table w3-blue"&gt; <br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table w3-blue">
+<thead>
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+</thead>
+
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+
+<hr>
+<h2>Responsive Table</h2>
+<p>The w3-responsive class creates a responsive table. The 
+table will then scroll horizontally on small screens. When viewing on large 
+screens, there is no difference.</p>
+<p>Resize the screen to see the effect on the table below.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class="w3-responsive"&gt;<br>&nbsp; &lt;table class="w3-table-all"&gt;<br>
+&nbsp;&nbsp;&nbsp;
+... table content ...<br>&nbsp; &lt;/table&gt;<br>
+  &lt;/div&gt;
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<div class="w3-responsive">
+<table class="w3-table w3-striped w3-bordered xw3-large"><tr>
+  <th>First&nbsp;Name</th>
+  <th>Last&nbsp;Name</th>
+  <th>Points</th>
+  <th>Points</th>
+  <th>Points</th>
+  <th>Points</th>
+  <th>Points</th>
+  <th>Points</th>
+  <th>Points</th>
+  <th>Points</th>
+  <th>Points</th>
+  <th>Points</th>
+  <th>Points</th>
+</tr>
+
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>5000</td>
+  <td>5000</td>
+  <td>5000</td>
+  <td>5000</td>
+  <td>5000</td>
+  <td>5000</td>
+  <td>5000</td>
+  <td>5000</td>
+  <td>5000</td>
+  <td>5000</td>
+  <td>5000</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>9400</td>
+  <td>9400</td>
+  <td>9400</td>
+  <td>9400</td>
+  <td>9400</td>
+  <td>9400</td>
+  <td>9400</td>
+  <td>9400</td>
+  <td>9400</td>
+  <td>9400</td>
+  <td>9400</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>6700</td>
+  <td>6700</td>
+  <td>6700</td>
+  <td>6700</td>
+  <td>6700</td>
+  <td>6700</td>
+  <td>6700</td>
+  <td>6700</td>
+  <td>6700</td>
+  <td>6700</td>
+  <td>6700</td>
+</tr></table>
+</div>
+</div>
+</div>
+<br>
+
+
+
+<hr>
+<h2>Table as a Card</h2>
+<p>Use a w3-card class to display a table as a card.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table-all w3-card-4"&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table-all w3-card-4">
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+
+<hr>
+<h2>Tiny Table</h2>
+<p>Use the w3-tiny class to display a tiny table.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table-all w3-tiny"&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table-all w3-tiny"><tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr>
+</table>
+</div>
+</div>
+<br>
+
+
+
+<hr>
+<h2>Small Table</h2>
+<p>Use the w3-small class to display a small table.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table-all w3-small"&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table-all w3-small"><tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr>
+</table>
+</div>
+</div>
+<br>
+
+
+
+
+<hr>
+<h2>Large Table</h2>
+<p>Use the w3-large class to display a large table.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table-all w3-large"&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table-all w3-large">
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+
+<hr>
+<h2>XLarge Table</h2>
+<p>Use the w3-large class to display a xlarge table.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table-all w3-xlarge"&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table-all w3-xlarge">
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+
+
+<hr>
+<h2>XXLarge Table</h2>
+<p>Use the w3-large class to display a xxlarge table.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table-all w3-xxlarge"&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table-all w3-xxlarge">
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+
+
+<hr>
+<h2>XXXLarge Table</h2>
+<p>Use the w3-large class to display a xxxlarge table.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table-all w3-xxxlarge"&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table-all w3-xxxlarge">
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+
+<hr>
+<h2>Jumbo Table</h2>
+<p>Use the w3-large class to display a jumbo table.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table class="w3-table-all w3-jumbo"&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<table class="w3-table-all w3-jumbo">
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>
+  <td>94</td>
+</tr>
+<tr>
+  <td>Adam</td>
+  <td>Johnson</td>
+  <td>67</td>
+</tr></table>
+</div>
+</div>
+<br>
+
+
+<hr>
+
+  <!-- Pagination -->
+  <div class="w3-center">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">�</a>
+    </div>
+  </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+w3CodeColor();
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

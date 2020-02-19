@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="overview.html">W3.CSS Overview</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="containers.html">W3.CSS Containers</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="panel.html">W3.CSS Panels</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Images.html">W3.CSS Images</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3Display.html">W3.CSS Display</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3layout.html">W3.CSS Layout</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3tables.html">W3.CSS Tables</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3list.html">W3.CSS Lists</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3button.html">W3.CSS Buttons</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="w3bars.html">W3.CSS Bars</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class=" w3-container">
+      <h1 class="w3-text-teal">W3.CSS Lists</h1>
+      
+<hr>
+
+<h2 class="w3-text">Basic List</h2>
+<p>The w3-ul class is used to display a basic list.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;w3-ul&quot;&gt;<br>&nbsp; &lt;li&gt;Jill&lt;/li&gt;<br>&nbsp; &lt;li&gt;Eve&lt;/li&gt;<br>&nbsp; &lt;li&gt;Adam&lt;/li&gt;<br>
+ &lt;/ul&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<ul class="w3-ul">
+    <li>Jill</li>
+    <li>Eve</li>
+    <li>Adam</li>
+  </ul>
+</div>
+<br>
+</div>
+
+<hr>
+
+<h2 class="w3-text">Bordered List</h2>
+<p>The w3-border class adds a border around the list.</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;w3-ul w3-border&quot;&gt;<br>&nbsp; &lt;li&gt;Jill&lt;/li&gt;<br>&nbsp; &lt;li&gt;Eve&lt;/li&gt;<br>&nbsp; &lt;li&gt;Adam&lt;/li&gt;<br>
+ &lt;/ul&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<ul class="w3-ul w3-border">
+    <li>Jill</li>
+    <li>Eve</li>
+    <li>Adam</li>
+  </ul>
+</div>
+<br>
+</div>
+
+<hr>
+
+<h2 class="w3-text">List Header</h2>
+<p>An example of how to add a heading element inside the list item:</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;w3-ul w3-border&quot;&gt;<br>&nbsp; &lt;li&gt;&lt;h2&gt;Names&lt;/h2&gt;&lt;/li&gt;<br>&nbsp;&lt;li&gt;Jill&lt;/li&gt;<br>&nbsp; &lt;li&gt;Eve&lt;/li&gt;<br>&nbsp; &lt;li&gt;Adam&lt;/li&gt;<br>
+ &lt;/ul&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<ul class="w3-ul w3-border">
+    <li><h2>Names</h2></li>
+    <li>Jill</li>
+    <li>Eve</li>
+    <li>Adam</li>
+  </ul>
+</div>
+<br>
+</div>
+
+<hr>
+
+<h2 class="w3-text">List as a Card</h2>
+<p>The w3-card-number classes can be used to show a list as a card:</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;w3-ul w3-card-4&quot;&nbsp;style=&quot;width:50%&quot;&gt;<br>&nbsp; &lt;li&gt;Jill&lt;/li&gt;<br>&nbsp; &lt;li&gt;Eve&lt;/li&gt;<br>&nbsp; &lt;li&gt;Adam&lt;/li&gt;<br>
+ &lt;/ul&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<ul class="w3-ul w3-card-4" style="width:50%">
+    <li>Jill</li>
+    <li>Eve</li>
+    <li>Adam</li>
+  </ul>
+</div>
+<br>
+</div>
+
+<hr>
+
+<h2 class="w3-text">Centered List</h2>
+<p>The w3-center class can be used to center the list items in a list:</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;w3-ul w3-center&quot;&gt;<br>&nbsp; &lt;li&gt;Jill&lt;/li&gt;<br>&nbsp; &lt;li&gt;Eve&lt;/li&gt;<br>&nbsp; &lt;li&gt;Adam&lt;/li&gt;<br>
+ &lt;/ul&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<ul class="w3-ul w3-center">
+    <li>Jill</li>
+    <li>Eve</li>
+    <li>Adam</li>
+  </ul>
+</div>
+<br>
+</div>
+<hr>
+
+<h2 class="w3-text">Colored List</h2>
+<p>The w3-color classes can be used to add a color to the list:</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;w3-ul w3-blue&quot;&gt;<br>&nbsp; &lt;li&gt;Jill&lt;/li&gt;<br>&nbsp; &lt;li&gt;Eve&lt;/li&gt;<br>&nbsp; &lt;li&gt;Adam&lt;/li&gt;<br>
+ &lt;/ul&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<ul class="w3-ul w3-blue">
+    <li>Jill</li>
+    <li>Eve</li>
+    <li>Adam</li>
+  </ul>
+</div>
+<br>
+</div>
+<hr>
+
+<h2 class="w3-text">Hoverable List</h2>
+<p>The w3-hoverable class adds a grey background color to each list item on mouse-over:</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;w3-ul w3-hoverable&quot;&gt;<br>&nbsp; &lt;li&gt;Jill&lt;/li&gt;<br>&nbsp; &lt;li&gt;Eve&lt;/li&gt;<br>&nbsp; &lt;li&gt;Adam&lt;/li&gt;<br>
+ &lt;/ul&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<ul class="w3-ul w3-hoverable">
+    <li>Jill</li>
+    <li>Eve</li>
+    <li>Adam</li>
+  </ul>
+</div>
+<br>
+</div>
+<p>If you want a specific hover color, add any of the w3-hover-color classes to each &lt;li&gt; element:</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;w3-ul&quot;&gt;<br>&nbsp; &lt;li class=&quot;w3-hover-red&quot;&gt;Jill&lt;/li&gt;<br>&nbsp; &lt;li class=&quot;w3-hover-blue&quot;&gt;Eve&lt;/li&gt;<br>&nbsp; &lt;li class=&quot;w3-hover-green&quot;&gt;Adam&lt;/li&gt;<br>
+ &lt;/ul&gt;<br></div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<ul class="w3-ul">
+    <li class="w3-hover-red">Jill</li>
+    <li class="w3-hover-blue">Eve</li>
+    <li class="w3-hover-green">Adam</li>
+  </ul>
+</div>
+<br>
+</div>
+
+<hr>
+
+<h2 class="w3-text">Closable List Item</h2>
+<p>Click on the "x" to close/hide a list item:</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;p&gt;To close/hide the list items, click on the &quot;x&quot;:&lt;/p&gt;
+ &lt;ul class=&quot;w3-ul w3-card-4&quot;&gt;<br>&nbsp; 
+&lt;li class=&quot;w3-display-container&quot;&gt;Jill &lt;span onclick=&quot;this.parentElement.style.display=&quot;none&quot;&quot; class=&quot;w3-button w3-transparent w3-display-right&quot;&gt;&times;&lt;/span&gt;&lt;/li&gt;<br>&nbsp; &lt;li class=&quot;w3-display-container&quot;&gt;Eve &lt;span onclick=&quot;this.parentElement.style.display=&quot;none&quot;&quot; class=&quot;w3-button w3-transparent w3-display-right&quot;&gt;&times;&lt;/span&gt;&lt;/li&gt;<br>&nbsp; 
+&lt;li class=&quot;w3-display-container&quot;&gt;Adam &lt;span onclick=&quot;this.parentElement.style.display=&quot;none&quot;&quot; class=&quot;w3-button w3-transparent w3-display-right&quot;&gt;&times;&lt;/span&gt;&lt;/li&gt;<br>
+ &lt;/ul&gt;<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<p>To close/hide the list items, click on the "x":</p>
+  <ul class="w3-ul w3-card-4">
+    <li class="w3-display-container">Jill <span onclick="this.parentElement.style.display='none'" class="w3-button w3-transparent w3-display-right">&times;</span></li>
+    <li class="w3-display-container">Adam <span onclick="this.parentElement.style.display='none'" class="w3-button w3-transparent w3-display-right">&times;</span></li>
+    <li class="w3-display-container">Eve <span onclick="this.parentElement.style.display='none'" class="w3-button w3-transparent w3-display-right">&times;</span></li>
+  </ul>
+</div>
+<br>
+</div>
+<hr>
+
+<h2 class="w3-text">Avatar List</h2>
+<p>Here is an example for the same:</p>
+<div class="w3-panel w3-card w3-orange">
+<h3>Example :</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;w3-ul w3-card-4&quot;&gt;<br>&nbsp; 
+    &lt;li class=&quot;w3-bar&quot;&gt;
+      &lt;span onclick=&quot;this.parentElement.style.display=&quot;none&quot;&quot; class=&quot;w3-bar-item w3-button w3-white w3-xlarge w3-right&quot;&gt;x&lt;/span&gt;
+      &lt;img src=&quot;pic1.jpg&quot; class=&quot;w3-bar-item w3-circle w3-hide-small&quot; style=&quot;width:85px&quot;&gt;
+      &lt;div class=&quot;w3-bar-item&quot;&gt;
+        &lt;span class=&quot;w3-large&quot;&lt;Jenny&lt;span&gt;&lt;br&gt;
+        &lt;span&gt;Web Designer&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+<br>
+    &lt;li class=&quot;w3-bar&quot;&gt;
+      &lt;span onclick=&quot;this.parentElement.style.display=&quot;none&quot;&quot; class=&quot;w3-bar-item w3-button w3-white w3-xlarge w3-right&quot;&gt;x&lt;/span&gt;
+      &lt;img src=&quot;pic2.jpg&quot; class=&quot;w3-bar-item w3-circle w3-hide-small&quot; style=&quot;width:85px&quot;&gt;
+      &lt;div class=&quot;w3-bar-item&quot;&gt;
+        &lt;span class=&quot;w3-large&quot;&lt;Mike&lt;span&gt;&lt;br&gt;
+        &lt;span&gt;Support&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+<br>
+&lt;/ul&gt;
+<br>
+</div>
+<h3>Output :</h3>
+<div class="w3-card w3-white w3-padding">
+<ul class="w3-ul w3-card-4">
+    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">x</span>
+      <img src="pic1.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Jenny</span><br>
+        <span>Web Designer</span>
+      </div>
+    </li>
+
+    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">x</span>
+      <img src="pic2.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Mike</span><br>
+        <span>Support</span>
+      </div>
+    </li>
+  </ul>
+</div>
+<br>
+</div>
+<hr>
+
+  <!-- Pagination -->
+  <div class="w3-center">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+w3CodeColor();
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

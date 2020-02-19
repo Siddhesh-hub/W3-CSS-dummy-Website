@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Containers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="overview.html">W3.CSS Overview</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="containers.html">W3.CSS Containers</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="panel.html">W3.CSS Panels</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="#">W3.CSS Animations</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="#">W3.CSS Images</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="#">W3.CSS Display</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="#">W3.CSS Layout</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="#">W3.CSS Mobile</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="#">W3.CSS Tables</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="#">W3.CSS Lists</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="#">W3.CSS Buttons</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="#">W3.CSS Bars</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class=" w3-container">
+      <h1 class="w3-text-teal">W3.CSS Containers</h1>
+	  
+		<div class="w3-container w3-black">
+		<h2>This is my Header</h2>
+		</div>
+		<div class="w3-container w3-light-grey w3-text-brown">
+		<h2>This is my Article</h2>
+		<p>
+			The Container Class
+			The w3-container class adds a 16px left and right padding to any HTML element.
+			The w3-container class is the perfect class to use for all HTML container elements like:
+			<p>&lt;div&gt;, &lt;article&gt;, &lt;section&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;form&gt;, and 
+				more.</p>
+		</p>
+		</div>
+		<div class="w3-container w3-dark-grey">
+		<p>This is my Footer</p>
+		</div>
+	</div>
+  </div>
+  <hr>
+	<div class="w3-row w3-padding-64">
+	<div class="w3-twothird w3-container">
+	<h2 class="w3-text">The Container Class</h2>
+	<p>The <b>w3-container</b> class adds a 16px left and right padding 
+	to any HTML element.</p>
+	<p>The <strong>w3-container</strong> class is the perfect class to use for all HTML container elements like:</p>
+	<p>&lt;div&gt;, &lt;article&gt;, &lt;section&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;form&gt;, and 
+	more.</p>
+	<hr>
+	<h2>Containers Provides Equality</h2>
+	<p>The <strong>w3-container</strong> provides equality for all HTML container 
+		elements:</p>
+	<ul>
+	 <li>Common margins</li>
+	 <li>Common paddings</li>
+	 <li>Common alignments</li>
+	 <li>Common fonts</li>
+	 <li>Common colors</li>
+	</ul>
+		<p>To use a container, just add a <strong>w3-container</strong> class to any element:</p>
+		
+	</div>
+	</div>
+<hr>
+<h2 class="w3-text">Color</h2>
+		<p>The <strong>w3-color</strong> class can be used to color the background</p>
+<div class="w3-panel w3-card w3-orange">
+	<h3>Example :</h3>
+	<div class="w3-code notranslate htmlHigh">
+		&lt; &quot; &gt;
+		<p>&lt;div class=&quot;w3-container w3-red&quot;&gt;</p>
+		<p>&lt;p&gt; This will create container with red color. &lt;/p&gt;</p>
+		<p>&lt;/div&gt;</p>
+	</div>
+	<h3>Output :</h3>
+		<div class="w3-code notranslate htmlHigh">
+			<div class="w3-container w3-red">
+			<p> This will create container with red color. </p>
+			</div>
+		</div>
+</div>
+<hr>
+
+	<div class="w3-row">
+	<div class="w3-twothird w3-container">
+	<h2 class="w3-text">Headers and Footers</h2>
+		<p>The <strong>w3-container</strong> class cam be used to style headers.</p>
+		<div class="w3-container w3-teal">
+			<h1>Header</h1>
+		</div>
+		<div class="w3-panel w3-card w3-orange">
+	<h3>Example :</h3>
+	<div class="w3-code notranslate htmlHigh">
+		
+		<p>&lt;div class=&quot;w3-panel w3-card w3-orange&quot;&gt;</p>
+		<p>&lt;h1&gt;Header &lt;h1&gt;</p>
+		<p>&lt;/div&gt;</p>
+	</div>
+	<h3>Output :</h3>
+		<div class="w3-code notranslate htmlHigh">
+			<div class="w3-container w3-teal">
+				<h1>Header</h1>
+			</div>
+		</div>
+	</div>
+	<hr>
+	
+	<div class="w3-row">
+	<div class="w3-container">
+	<h2 class="w3-text">Article and Sections</h2>
+		<p>The <strong>w3-container </strong>class can be used to style &lt;article&gt; and &lt;section&gt; elements</p>
+		<div class="w3-panel w3-card w3-orange">
+	<h3>Example :</h3>
+	<div class="w3-code notranslate htmlHigh">
+		
+		<p>&lt;div class=&quot;w3-container&quot;&gt;</p>
+		<p>&lt;h2&gt;Mumbai&lt;h2&gt;</p>
+		<p>&lt;p&gt;Financial capital of India and capital of Maharashtra&lt;/p&gt;</p>
+		<p>&lt;p&gt;Known for it's western culture.&lt;/p&gt;</p>
+		<p>&lt;hr&gt;</p>
+		<p>&lt;/div&gt;</P>
+		
+		<p>&lt;article class=&quot;w3-container&quot;&gt;</p>
+		<p>&lt;h2&gt;Pune&lt;h2&gt;</p>
+		<p>&lt;p&gt;Cultural and Educational capital of India&lt;/p&gt;</p>
+		<p>&lt;p&gt;Known as historic city.&lt;/p&gt;</p>
+		<p>&lt;hr&gt;</p>
+		<p>&lt;/article&gt;</P>
+		
+		<p>&lt;section class=&quot;w3-container&quot;&gt;</p>
+		<p>&lt;h2&gt;Nagpur&lt;h2&gt;</p>
+		<p>&lt;p&gt;Central city of India&lt;/p&gt;</p>
+		<p>&lt;p&gt;Known for best oranges in world.&lt;/p&gt;</p>
+		<p>&lt;hr&gt;</p>
+		<p>&lt;/section&gt;</P>
+	</div>
+	<h3>Output :</h3>
+		<div class="w3-code notranslate htmlHigh">
+			<div class="w3-container"> 
+			  <h2>Mumbai</h2>
+			  <p>Financial capital of India and capital of Maharashtra </p>
+			  <p>Known for it's western culture.</p>
+			  <hr>
+			</div>
+
+			<article class="w3-container"> 
+			  <h2>Pune</h2>
+			  <p>Cultural and Educational capital of India</p>
+			  <p>Known as historic city.</p>
+			  <hr>
+			</article>
+
+			<section class="w3-container"> 
+			  <h2>Nagpur</h2>
+			  <p>Central city of India</p>
+			  <p>Known for best oranges in world.</p>
+			  <hr>
+			</section>
+		</div>
+	</div>
+<hr>
+<h2 class="w3-text">Web Page HTML</h2>
+<div class="w3-panel w3-card w3-orange">
+	<h3>Example using &lt;div&gt; elements</h3>
+	<div class="w3-code notranslate htmlHigh">
+		<p>&lt;div class=&quot;w3-container w3-red&quot;&gt;</p>
+		<p>&lt;h1&gt;&lt;/h1&gt;</p>
+		<p>&lt;/div&gt;</p>
+		<p>&lt;img src=&quot;containers_myCar.jpg&quot; alt=&quot;Car&quot; style=&quot;width:100%&quot;&gt;</p>
+		<p>&lt;div class=&quot;w3-container&gt;</p>
+		<p>&lt;p&gt; A car is a wheeled, self-powered motor vehicleused for transportation.
+					Most definitionsof the term specify that cars are designed to run primarily on roads.&lt;/p&gt;</p>
+		<p>&lt;/div&gt;</p>
+	</div>
+	<h3>Output :</h3>
+	
+		<div class="w3-container w3-red">
+			<h1>Header</h1>
+		</div>
+		<img src="containers_myCar.jpg" alt="Car" style="width:100%">
+		<div class="w3-container">
+			<p>A car is a wheeled, self-powered motor vehicle used for transportation.
+			Most definitions of the term specify that cars are designed to run primarily on roads.</p>
+			</div>
+			<div class="w3-container w3-red">
+				<h5>Footer</h5>
+			</div>
+		</div>
+<div class="w3-panel w3-card w3-orange">
+	<h3>Example using HTML semantics elements</h3>
+	<div class="w3-code notranslate htmlHigh">
+		<p>&lt;div class=&quot;w3-container w3-red&quot;&gt;</p>
+		<p>&lt;h1&gt;&lt;/h1&gt;</p>
+		<p>&lt;/div&gt;</p>
+		<p>&lt;img src=&quot;containers_myCar.jpg&quot; alt=&quot;Car&quot; style=&quot;width:100%&quot;&gt;</p>
+		<p>&lt;div class=&quot;w3-container&gt;</p>
+		<p>&lt;p&gt; A car is a wheeled, self-powered motor vehicleused for transportation.
+					Most definitionsof the term specify that cars are designed to run primarily on roads.&lt;/p&gt;</p>
+		<p>&lt;/div&gt;</p>
+	</div>
+	<h3>Output :</h3>
+	<header class="w3-container w3-teal">
+		<h1>Header</h1>
+	</header>
+	<img src="containers_myCar.jpg" alt="Car" style="width:100%">
+	<article class="w3-container">
+		<p>A car is a wheeled, self-powered motor vehicle used for transportation. 
+		Most definitions of the term specify that cars are designed to run primarily on roads. (Wikipedia)</p>
+	</article>
+	<footer class="w3-container w3-teal">
+		<h5>Footer</h5>
+	</footer>
+</div>
+<hr>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">&raquo;</a>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
